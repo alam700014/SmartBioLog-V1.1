@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_bg"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:paddingBottom="50dp"
+    android:layout_margin="50dp">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_title_bar">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+        <FrameLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:id="@+id/image" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/light_orange"
+            android:textStyle="bold"
+            android:fontFamily="TimesNewRoman"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/title" />
+        </FrameLayout>
+        </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:background="@color/light_orange">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/view3" />
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textColor="@color/dark_black"
+            android:textStyle="bold"
+            android:fontFamily="TimesNewRoman"
+            android:text="Attendance Mode :"
+            android:id="@+id/tvAttendanceMode" />
+
+
+        <Spinner
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:id="@+id/modeSpinner"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/glow_white"
+            android:popupBackground="@drawable/spinner_border"
+            android:fontFamily="TimesNewRoman"
+            android:background="@drawable/inputbox"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/dark_black"
+            android:textStyle="bold"
+            android:fontFamily="TimesNewRoman"
+            android:text="Start Time:" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/etStartTime"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:editable="false"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="@drawable/table_row">
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="Pick time"
+            android:background="@drawable/clock_black"
+            android:layout_toRightOf="@id/etStartTime"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/dark_black"
+            android:textStyle="bold"
+            android:fontFamily="TimesNewRoman"
+            android:text="End Time:" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/etEndTime"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:editable="false"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="@drawable/table_row">
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="Pick time"
+            android:background="@drawable/clock_black"
+            android:layout_toRightOf="@id/etEndTime"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/btn_Save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textSize="13sp"
+            android:background="@drawable/pressed_button"
+            android:textStyle="bold"
+            android:textColor="@color/glow_white"
+            android:fontFamily="Calibri" />
+
+        <Button
+            android:id="@+id/btn_Cancel"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textSize="13sp"
+            android:background="@drawable/pressed_button"
+            android:textStyle="bold"
+            android:textColor="@color/glow_white"
+            android:fontFamily="Calibri" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,265 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="100dp"
+        android:fillViewport="true"
+        android:background="@drawable/scrollview_border"
+        android:scrollbarSize="5dp"
+        style="@style/scrollbar_shape_style"
+        android:layout_weight="1"
+        android:id="@+id/scrollView">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FE6601">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:id="@+id/view2" />
+
+            </TableRow>
+
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/logo"/>
+
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/U_image"
+                    android:src="@drawable/dummyphoto"
+                    android:background="#474747"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FE6601">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:id="@+id/view3" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="17px"
+                    android:textColor="#FE6601"
+                    android:fontFamily="TimesNewRoman"
+                    android:layout_marginTop="5dp"
+                    android:text="Employee ID:"
+                    android:id="@+id/textView25" />
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EmployeeID"
+                        android:enabled="false"
+                        android:textStyle="bold"
+                        android:textSize="15px"
+                        android:textColor="#FE6601"
+                        android:fontFamily="TimesNewRoman" />
+
+                </FrameLayout>
+
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:id="@+id/rowCardId"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="17px"
+                    android:textColor="#FE6601"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Card ID:"
+                    android:id="@+id/textView3" />
+
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:enabled="false"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/CardID"
+                    android:textSize="15px"
+                    android:textColor="#FE6601"
+                    android:textStyle="bold"
+                    android:fontFamily="TimesNewRoman" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:id="@+id/rowName"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="17px"
+                    android:textColor="#FE6601"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Name:"
+                    android:id="@+id/textView9" />
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:id="@+id/Name"
+                    android:textSize="15px"
+                    android:textColor="#FE6601"
+                    android:fontFamily="TimesNewRoman"
+                    android:textStyle="bold" />
+
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="17px"
+                    android:textColor="#FE6601"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Match Staus:" />
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:id="@+id/match_Status"
+                    android:textSize="15px"
+                    android:fontFamily="TimesNewRoman"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="17px"
+                    android:textColor="#FE6601"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Attendance Time:" />
+
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:enabled="false"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/AttendanceTime"
+                    android:textSize="15px"
+                    android:textColor="#FE6601"
+                    android:textStyle="bold"
+                    android:fontFamily="TimesNewRoman" />
+
+            </TableRow>
+
+
+
+            <TableRow
+                android:layout_marginTop="30dp">
+
+                <Button
+                    android:id="@+id/btn_rebootsoft"
+                    android:visibility="invisible"
+                    android:enabled="false"
+                    android:layout_width="fill_parent"
+                    android:layout_span="2"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="onRebootSoft"
+                    android:text="Reboot Software"
+                    android:textSize="15px"
+                    android:background="#3D8C7F"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="Calibri"/>
+
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/btn_closeandquit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:enabled="false"
+                    android:layout_span="2"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="onCloseAndQuit"
+                    android:text="Close Com And Quit"
+                    android:textSize="15px"
+                    android:background="#3D8C7F"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="Calibri"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+

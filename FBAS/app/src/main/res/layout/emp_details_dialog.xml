@@ -1,0 +1,212 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_style"
+    android:layout_width="match_parent"
+    android:layout_height="400dp">
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#219906">
+
+                <TextView
+                    android:textAlignment="center"
+                    android:paddingLeft="150dp"
+                    android:text="Matched Details"
+                    android:layout_span="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16px"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="TimesNewRoman" />
+
+            </TableRow>
+
+
+            <!--<TableRow>-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_span="2"-->
+                    <!--android:layout_gravity="start"-->
+                    <!--android:src="@drawable/match" />-->
+
+            <!--</TableRow>-->
+
+
+
+            <TableRow
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:layout_gravity="end"
+                    android:id="@+id/U_image"
+                    android:src="@drawable/dummyphoto" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="17px"
+                    android:textColor="#FE6601"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Employee Id:"
+                    android:id="@+id/textView25" />
+
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="50dp"
+                        android:id="@+id/EmployeeID"
+                        android:enabled="false"
+                        android:textStyle="bold"
+                        android:textSize="15px"
+                        android:textColor="#FE6601"
+                        android:fontFamily="TimesNewRoman" />
+
+
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:id="@+id/rowCardId"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="17px"
+                    android:textColor="#FE6601"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Card Id:"
+                    android:id="@+id/textView3" />d
+
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:enabled="false"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/CardID"
+                    android:paddingLeft="50dp"
+                    android:textSize="15px"
+                    android:textColor="#FE6601"
+                    android:textStyle="bold"
+                    android:fontFamily="TimesNewRoman" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:id="@+id/rowName"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="17px"
+                    android:textColor="#FE6601"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Employee Name:"
+                    android:id="@+id/textView9" />
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:id="@+id/Name"
+                    android:paddingLeft="50dp"
+                    android:textSize="15px"
+                    android:textColor="#FE6601"
+                    android:fontFamily="TimesNewRoman"
+                    android:textStyle="bold" />
+
+
+            </TableRow>
+
+
+            <!--<TableRow-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:visibility="visible">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="30dp"-->
+                    <!--android:textSize="17px"-->
+                    <!--android:textColor="#FE6601"-->
+                    <!--android:fontFamily="TimesNewRoman"-->
+                    <!--android:text="Match Staus:" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="250dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:enabled="false"-->
+                    <!--android:id="@+id/match_Status"-->
+                    <!--android:textColor="#FE6601"-->
+                    <!--android:textSize="15px"-->
+                    <!--android:fontFamily="TimesNewRoman"-->
+                    <!--android:textStyle="bold" />-->
+
+            <!--</TableRow>-->
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="17px"
+                    android:textColor="#FE6601"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Attendance Time:" />
+
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:enabled="false"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/AttendanceTime"
+                    android:paddingLeft="50dp"
+                    android:textSize="15px"
+                    android:textColor="#FE6601"
+                    android:textStyle="bold"
+                    android:fontFamily="TimesNewRoman" />
+
+            </TableRow>
+
+
+        </TableLayout>
+
+
+
+</LinearLayout>
+
+

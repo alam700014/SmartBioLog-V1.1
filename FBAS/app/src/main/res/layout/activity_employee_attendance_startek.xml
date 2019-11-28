@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?><!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:id="@+id/activity_main"--><!--android:orientation="vertical"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:paddingBottom="@dimen/activity_vertical_margin"--><!--android:paddingLeft="@dimen/activity_horizontal_margin"--><!--android:paddingRight="@dimen/activity_horizontal_margin"--><!--android:paddingTop="@dimen/activity_vertical_margin">-->
+
+
+<!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:gravity="center"--><!--android:orientation="vertical">-->
+
+<!--<ImageView--><!--android:id="@+id/imageView"--><!--android:layout_width="140dp"--><!--android:layout_height="172dp"--><!--android:layout_alignParentEnd="true"--><!--android:layout_alignParentRight="true"--><!--android:layout_alignParentTop="true"--><!--android:background="@color/colorPrimaryDark"--><!--android:padding="1dp"--><!--app:srcCompat="@android:color/background_light" />-->
+
+<!--<TextView--><!--android:id="@+id/textMessage"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_centerHorizontal="true"--><!--android:layout_centerVertical="true"--><!--android:maxLines="2"--><!--android:text="Status Message" />-->
+
+
+<!--</LinearLayout>-->
+
+<!--<LinearLayout--><!--android:gravity="center"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginTop="30dp"--><!--android:orientation="vertical">-->
+
+<!--<Button--><!--android:id="@+id/button1"--><!--android:layout_width="100dp"--><!--android:layout_height="50dp"--><!--android:background="#ffff571a"--><!--android:enabled="true"--><!--android:text="Capture Preview"--><!--android:textColor="#ffffff" />-->
+
+
+<!--</LinearLayout>-->
+
+<!--</LinearLayout>-->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/emp_attendence"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/master__background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <include
+            android:id="@+id/hardwareConnection"
+            layout="@layout/hardwareconnection"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        </include>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.android.fortunaattendancesystem.extras.DigitalClock
+            android:id="@+id/digitalClock1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="Calibri"
+            android:textColor="@color/glow_white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tvstate"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/putFingerMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_row"
+                android:fontFamily="TimesNewRoman"
+                android:gravity="center"
+                android:text="Put Finger On Finger Sensor To Be Identified"
+                android:textAlignment="center"
+                android:textColor="@color/glow_white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/vertical_progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/table_row_rev"
+                android:max="100"
+                android:padding="4dp" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bgtoggle"
+                android:button="@null"
+                android:textOff=""
+                android:textOn="" />
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<View-->
+            <!--android:id="@+id/bar"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="4dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="@android:color/holo_red_dark" />-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/imageView1"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="280dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_weight="0.30"-->
+            <!--android:contentDescription="imageView1"-->
+            <!--android:padding="4dp" />-->
+
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:background="@drawable/imageview_border"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.30"
+                android:contentDescription="imageView1"
+                android:padding="4dp" />
+
+        </LinearLayout>
+
+
+        <!--android:background="@drawable/imageview_border"-->
+
+    </LinearLayout>
+
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+
+
+    </LinearLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:baselineAligned="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/empId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/inputbox"
+                android:fontFamily="TimesNewRoman"
+                android:gravity="center"
+                android:hint="Enter Employee ID"
+                android:inputType="textCapCharacters"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColorHint="@color/fade_black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Added on 31-08-2018  -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10sp"
+            android:baselineAligned="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_internetconn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="TimesNewRoman"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <!--  -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btnIn"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/pressed_button_in"
+                    android:drawableTop="@drawable/att_in"
+                    android:fontFamily="TimesNewRoman"
+                    android:gravity="center"
+                    android:text="IN"
+                    android:textAlignment="center"
+                    android:textColor="@color/glow_white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <!--<ToggleButton
+                    android:id="@+id/toggleButton1"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bgtoggle"
+                    android:button="@null"
+                    android:textOff=""
+                    android:textOn="" />-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/dash_box"
+                    android:orientation="vertical"
+                    android:padding="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="Calibri"
+                        android:gravity="center"
+                        android:text="Records"
+                        android:textColor="@color/gray"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:padding="0dp"
+                            android:src="@drawable/empsign" />
+
+                        <TextView
+                            android:id="@+id/recordCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="Calibri"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/gray"
+                            android:textSize="35sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btnOut"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/pressed_button_out"
+                    android:drawableTop="@drawable/att_out"
+                    android:fontFamily="TimesNewRoman"
+                    android:gravity="center"
+                    android:text="OUT"
+                    android:textAlignment="center"
+                    android:textColor="@color/glow_white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!--<View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:visibility="invisible"/>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/table_row"
+            android:fontFamily="TimesNewRoman"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/sensormessages"
+            android:textColor="@color/glow_white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <android.inputmethodservice.KeyboardView
+            android:id="@+id/customkeyboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:keyBackground="@drawable/samplekeybackground"
+            android:keyPreviewLayout="@layout/kbpreview"
+            android:keyPreviewOffset="2dp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+-->
+
+    <SurfaceView
+        android:id="@+id/surface_camera"
+        android:layout_width="1dp"
+        android:layout_height="1dp"></SurfaceView>
+
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<SurfaceView-->
+    <!--android:id="@+id/surface_camera"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1">-->
+
+    <!--</SurfaceView>-->
+
+    <!--</LinearLayout>-->
+
+</LinearLayout>
+

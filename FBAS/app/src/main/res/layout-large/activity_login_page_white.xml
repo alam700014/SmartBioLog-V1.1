@@ -1,0 +1,336 @@
+<!--                        Layout For White Tab(3G7+)                                           -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/master__background"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context="com.android.fortunaattendancesystem.activities.LoginActivity">
+    <!--<ActionBarContainer
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hello" />
+        </LinearLayout>
+    </ActionBarContainer>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25">
+
+        <include
+            android:id="@+id/hardwareConnection"
+            layout="@layout/hardwareconnection"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3"
+        android:orientation="horizontal">
+        <!--<TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TableRow
+            android:layout_marginTop="50dp"
+            android:gravity="center">-->
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_weight="1.3"
+            android:src="@drawable/bio_mobile" />
+        <!--</TableRow>
+        </TableLayout>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.4">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom">
+            <!--<TableRow
+                android:layout_marginTop="50dp"
+                android:gravity="center">
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/bio_mobile"/>
+            </TableRow>-->
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0">
+
+                    <EditText
+                        android:id="@+id/txtUsername"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/inputbox"
+                        android:drawableLeft="@drawable/usershape"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="center"
+                        android:hint="Enter Username"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:padding="5dp"
+                        android:textAllCaps="true"
+                        android:textColor="@color/gray"
+                        android:textColorHint="@color/light_gray"
+                        android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+            </TableRow>
+
+            <TableRow
+
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/txtPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/inputbox"
+                    android:drawableLeft="@drawable/padlock"
+                    android:fontFamily="TimesNewRoman"
+                    android:gravity="center"
+                    android:hint="Enter Password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:padding="5dp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/gray"
+                    android:textColorHint="@color/light_gray"
+                    android:textCursorDrawable="@drawable/custom_edit_text_cursor"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvpassword"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/pressed_button"
+                    android:drawableRight="@drawable/loginol"
+                    android:fontFamily="Anna"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Login"
+                    android:textAlignment="center"
+                    android:textColor="@color/glow_white"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="0.85"
+        android:gravity="bottom">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/logo1"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:src="@drawable/aadhaarlogo1" />
+
+            <ImageView
+                android:id="@+id/logo2"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/logo" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="0.20"
+        android:gravity="bottom">
+
+        <include
+            layout="@layout/flashmessage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <!--<Button-->
+    <!--android:id="@+id/btnSignUp"-->
+    <!--android:layout_width="350dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="60dp"-->
+    <!--android:textAlignment="center"-->
+    <!--android:text="Sign Up"-->
+    <!--android:textSize="15px"-->
+    <!--android:background="#e63900"-->
+    <!--android:textStyle="bold"-->
+    <!--android:textColor="#FFFFFF"-->
+    <!--android:fontFamily="Calibri"-->
+    <!--android:layout_below="@+id/btnLogin"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:gravity="center"/>-->
+
+
+    <!--<TableLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/tblMessage"-->
+    <!--android:background="#FFDD4B39">-->
+
+    <!--<TableRow-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/fade_black_gray">-->
+
+    <!-- -->
+
+    <!--</TableRow>-->
+
+    <!--<TableRow>-->
+
+    <!-- -->
+
+    <!--</TableRow>-->
+
+    <!--<TableRow-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/fade_black_gray">-->
+
+    <!-- -->
+
+    <!--</TableRow>-->
+
+    <!--</TableLayout>-->
+
+
+    <!--<TableLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="300dp">-->
+
+
+    <!--<TableRow>-->
+
+
+    <!--</TableRow>-->
+
+    <!--<TableRow android:layout_marginTop="20dp">-->
+
+
+    <!--</TableRow>-->
+
+    <!--<TableRow>-->
+
+
+    <!--</TableRow>-->
+
+    <!--<TableRow>-->
+
+
+    <!--</TableRow>-->
+
+
+    <!--&lt;!&ndash;<TableRow>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_span="2"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginTop="45dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginLeft="30dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textAlignment="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Grant Permission"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="15px"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="#FE6601"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="#FFFFFF"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:fontFamily="Calibri"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:visibility="invisible"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/btnMorphoPermission"/>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;</TableRow>&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;<TableRow>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_span="2"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginTop="45dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginLeft="30dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textAlignment="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="Enumerate Device"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textSize="15px"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="#FE6601"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="#FFFFFF"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:fontFamily="Calibri"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/btnEnumerateDevice"/>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;</TableRow>&ndash;&gt;-->
+
+
+    <!--</TableLayout>-->
+
+    <!--<TableLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="260dp">-->
+
+    <!--<TableRow-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!-- -->
+
+    <!--</TableRow>-->
+
+    <!--</TableLayout>-->
+</LinearLayout>
+

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@drawable/dialog_bg">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left"
+                android:id="@+id/image"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/heavy_orange"
+                android:textStyle="bold"
+                android:fontFamily="TimesNewRoman"
+                android:id="@+id/title" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/heavy_orange"
+           android:layout_marginTop="5dp">
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="2dp"
+               android:id="@+id/view3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/table_row">
+
+
+            <TextView
+                android:text="Finger Index:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/glow_white"
+                android:fontFamily="TimesNewRoman" />
+
+            <Spinner
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/fingerIndex"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/light_orange"
+                android:fontFamily="TimesNewRoman"
+                android:background="@drawable/inputbox"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/inputbox_edge">
+
+            <TextView
+                android:text="Verification Mode:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/light_orange"
+                android:fontFamily="TimesNewRoman" />
+
+            <TextView
+                android:text="1:N"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/heavy_orange"
+                android:fontFamily="TimesNewRoman" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/inputbox_edge">
+
+            <TextView
+                android:text="Security Level:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/light_orange"
+                android:fontFamily="TimesNewRoman" />
+
+            <TextView
+                android:text="C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/heavy_orange"
+                android:fontFamily="TimesNewRoman" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/btn_Save"
+                android:enabled="false"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textSize="15sp"
+                android:background="@drawable/pressed_button"
+                android:textStyle="bold"
+                android:textColor="@color/glow_white"
+                android:fontFamily="Calibri" />
+
+            <Button
+                android:id="@+id/btn_Cancel"
+                android:layout_marginLeft="20dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:textSize="15sp"
+                android:background="@drawable/pressed_button"
+                android:textStyle="bold"
+                android:textColor="@color/glow_white"
+                android:fontFamily="Calibri" />
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

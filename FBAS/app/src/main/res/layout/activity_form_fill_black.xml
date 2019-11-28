@@ -1,0 +1,950 @@
+<!--                                  Layout For Black Tab                                       -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:background="@drawable/scrollview_border"
+        android:scrollbarSize="5dp"
+        style="@style/scrollbar_shape_style"
+        android:layout_weight="1"
+        android:id="@+id/scrollView">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fade_black_gray">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:id="@+id/view2" />
+
+            </TableRow>
+
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/logo" />
+
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_marginLeft="115dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/imageView1"
+                    android:src="@drawable/dummyphoto"
+                    android:background="#474747" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:layout_marginLeft="340dp"
+                    android:id="@+id/cam"
+                    android:src="@android:drawable/ic_menu_camera"
+                    android:textStyle="bold"
+                    android:background="@color/fade_black_gray"
+                    android:onClick="Camera" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fade_black_gray">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:id="@+id/view3" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_span="2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:textStyle="bold"
+                    android:text="Fields Marked With (*) are Mandatory"
+                    android:textSize="15px"
+                    android:textColor="#e63900"
+                    android:fontFamily="TimesNewRoman" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="#e63900">
+
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_marginLeft="30dp"
+                    android:text="Employee Details"
+                    android:layout_span="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16px"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="TimesNewRoman" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:textStyle="bold"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="* Employee ID:"
+                    android:id="@+id/textView25" />
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EmployeeID"
+                        android:hint="Employee ID"
+                        android:textSize="15px"
+                        android:textColor="@color/fade_black_gray"
+                        android:fontFamily="TimesNewRoman"
+                        android:marqueeRepeatLimit="8"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:maxLength="16" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:id="@+id/EmployeeIDStatus" />
+
+                </FrameLayout>
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:textStyle="bold"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="* Card ID:"
+                    android:id="@+id/textView3" />
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/CardID"
+                        android:textSize="15px"
+                        android:textColor="@color/fade_black_gray"
+                        android:fontFamily="TimesNewRoman"
+                        android:hint="Card Id"
+                        android:inputType="number"
+                        android:marqueeRepeatLimit="8"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:maxLength="8" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:id="@+id/CardIDStatus" />
+
+                </FrameLayout>
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:textStyle="bold"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="* Name:"
+                    android:id="@+id/textView9" />
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:id="@+id/Name"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:fontFamily="TimesNewRoman"
+                    android:hint="Name"
+                    android:maxLength="15"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true" />
+
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:textStyle="bold"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Aadhaar ID:" />
+
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/AadhaarId"
+                    android:hint="Aadhaar Id"
+                    android:inputType="number"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:maxLength="12"
+                    android:fontFamily="TimesNewRoman" />
+
+
+            </TableRow>
+
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:textStyle="bold"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Mobile Number:"
+                    android:id="@+id/textView14" />
+
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/MobileNo"
+                    android:hint="Mobile Number"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:fontFamily="TimesNewRoman"
+                    android:maxLength="10"
+                    android:inputType="number" />
+
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:textStyle="bold"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Blood Group:"
+                    android:id="@+id/textView10" />
+
+
+                <Spinner
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bloodgroup"
+                    android:scrollbarSize="30dp"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:fontFamily="TimesNewRoman" />
+
+            </TableRow>
+
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:textSize="15px"
+                    android:textStyle="bold"
+                    android:textColor="@color/fade_black_gray"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Mail ID:"
+                    android:id="@+id/textView15" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/MailId"
+                    android:hint="MailId"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:fontFamily="TimesNewRoman" />
+
+            </TableRow>
+
+
+            <TableRow android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:textSize="15px"
+                    android:textStyle="bold"
+                    android:textColor="@color/fade_black_gray"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Valid Upto:"
+                    android:id="@+id/textView18" />
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/ValidUpto"
+                        android:hint="Valid Upto"
+                        android:editable="false"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15px"
+                        android:textColor="@color/fade_black_gray"
+                        android:fontFamily="TimesNewRoman"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:layout_gravity="right|center_vertical"
+                        android:onClick="validUpto"
+                        android:background="#e63900" />
+
+                </FrameLayout>
+
+            </TableRow>
+
+
+            <TableRow android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:textSize="15px"
+                    android:textStyle="bold"
+                    android:textColor="@color/fade_black_gray"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Date Of Birth:" />
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/BirthDay"
+                        android:editable="false"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15px"
+                        android:textColor="@color/fade_black_gray"
+                        android:fontFamily="TimesNewRoman"
+                        android:hint="Date Of Birth"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true" />
+
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:layout_gravity="right|center_vertical"
+                        android:onClick="dateOfBirth"
+                        android:background="#e63900" />
+
+
+                </FrameLayout>
+
+
+            </TableRow>
+
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:textSize="15px"
+                    android:textStyle="bold"
+                    android:textColor="@color/fade_black_gray"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="PIN:"
+                    android:id="@+id/textView16" />
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/PIN"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:fontFamily="TimesNewRoman"
+                    android:hint="Pin"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true" />
+
+            </TableRow>
+
+            <!--Done-->
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:textStyle="bold"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Group Name:"
+                    android:id="@+id/textView20" />
+
+                <Spinner
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/GroupId"
+                    android:scrollbarSize="30dp"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:fontFamily="TimesNewRoman" />
+
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:textStyle="bold"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Site Code:"
+                    android:id="@+id/textView11" />
+
+
+                <Spinner
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/sitecode"
+                    android:scrollbarSize="30dp"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:fontFamily="TimesNewRoman" />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#e63900">
+
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_marginLeft="30dp"
+                    android:text="Training Center Details"
+                    android:layout_span="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16px"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="TimesNewRoman" />
+
+            </TableRow>
+
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:textStyle="bold"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Training Center Name:" />
+
+                <Spinner
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/TrainingCenterName"
+                    android:scrollbarSize="30dp"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:fontFamily="TimesNewRoman" />
+
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:textStyle="bold"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Batch Name:" />
+
+
+                <Spinner
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/BatchName"
+                    android:scrollbarSize="30dp"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:fontFamily="TimesNewRoman" />
+
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#e63900">
+
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_marginLeft="30dp"
+                    android:text="Finger Enrollment Details"
+                    android:layout_span="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16px"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="TimesNewRoman" />
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:text="Enrollment Status:"
+                    android:textSize="15px"
+                    android:textStyle="bold"
+                    android:textColor="@color/fade_black_gray"
+                    android:fontFamily="TimesNewRoman"
+                    android:id="@+id/textView12" />
+
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/enrollstatus"
+                    android:hint="No"
+                    android:inputType="phone"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:fontFamily="TimesNewRoman"
+                    android:marqueeRepeatLimit="14" />
+
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:textSize="15px"
+                    android:textStyle="bold"
+                    android:textColor="@color/fade_black_gray"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Number Of Fingers:"
+                    android:id="@+id/textView13" />
+
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nosfinger"
+                    android:hint="NA"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:fontFamily="TimesNewRoman" />
+
+            </TableRow>
+
+
+            <TableRow android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:textSize="15px"
+                    android:textStyle="bold"
+                    android:textColor="@color/fade_black_gray"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Verification Mode:"
+                    android:id="@+id/textView17" />
+
+                <EditText
+                    android:id="@+id/Varification"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:scrollbarSize="30dp"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:hint="NA"
+                    android:fontFamily="TimesNewRoman" />
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15px"
+                    android:textStyle="bold"
+                    android:textColor="@color/fade_black_gray"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Smart Card Version:"
+                    android:id="@+id/textView24" />
+
+
+                <EditText
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/SmartCardVersion"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:fontFamily="TimesNewRoman"
+                    android:hint="NA" />
+
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#e63900">
+
+                <TextView
+                    android:textAlignment="center"
+                    android:layout_marginLeft="30dp"
+                    android:text="Admin Use Only"
+                    android:layout_span="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16px"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="TimesNewRoman" />
+
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:textSize="15px"
+                    android:textStyle="bold"
+                    android:textColor="@color/fade_black_gray"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Black Listed:"
+                    android:id="@+id/textView21" />
+
+                <Spinner
+                    android:id="@+id/IsBlacklisted"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:scrollbarSize="30dp"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:fontFamily="TimesNewRoman" />
+
+
+            </TableRow>
+
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:textSize="15px"
+                    android:textStyle="bold"
+                    android:textColor="@color/fade_black_gray"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Access Right:"
+                    android:id="@+id/textView22" />
+
+                <Spinner
+                    android:id="@+id/IsAccessRightEnabled"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:scrollbarSize="30dp"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:fontFamily="TimesNewRoman" />
+
+            </TableRow>
+
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:textSize="15px"
+                    android:textStyle="bold"
+                    android:textColor="@color/fade_black_gray"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Lock Open:"
+                    android:id="@+id/textView23" />
+
+
+                <Spinner
+                    android:id="@+id/IsLockOpenWhenAllowed"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:scrollbarSize="30dp"
+                    android:textSize="15px"
+                    android:textColor="@color/fade_black_gray"
+                    android:fontFamily="TimesNewRoman" />
+
+
+            </TableRow>
+
+
+            <TableRow>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:textAlignment="center"
+                    android:layout_span="2"
+                    android:onClick="next"
+                    android:text="Preview"
+                    android:textSize="15px"
+                    android:background="#e63900"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="Calibri"
+                    android:id="@+id/btnSave" />
+
+            </TableRow>
+
+
+            <!--<TableRow-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="#FFFFFF">-->
+
+
+            <!--<ImageButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="160dp"-->
+            <!--android:textAlignment="center"-->
+            <!--android:src="@drawable/leftarrow"-->
+            <!--android:id="@+id/esc1"-->
+            <!--android:textSize="14px"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--android:fontFamily="Calibri"-->
+            <!--android:background="#FFFFFF"-->
+            <!--android:onClick="previous">-->
+            <!--</ImageButton>-->
+
+            <!--&lt;!&ndash;<Button&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="100dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="40dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textAlignment="center"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="Previous"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/esc"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="14px"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="#FFFFFF"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:fontFamily="Calibri"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="#FE6601"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:onClick="esc"&ndash;&gt;-->
+            <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<Button&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="100dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="40dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="Next"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textAlignment="center"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/next"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="14px"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="#FFFFFF"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:fontFamily="Calibri"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="#FE6601"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:onClick="next" />&ndash;&gt;-->
+
+
+            <!--<ImageButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_marginLeft="220dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textAlignment="center"-->
+            <!--android:src="@drawable/rightarrow"-->
+            <!--android:id="@+id/next1"-->
+            <!--android:textSize="14px"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--android:fontFamily="Calibri"-->
+            <!--android:background="#FFFFFF"-->
+            <!--android:onClick="next"/>-->
+
+
+            <!--</TableRow>-->
+
+
+        </TableLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutThatDoesNotScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#e63900">
+
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="490dp"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:src="@drawable/close"
+                    android:id="@+id/next1"
+                    android:onClick="minimizeKeyBoard" />
+
+
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

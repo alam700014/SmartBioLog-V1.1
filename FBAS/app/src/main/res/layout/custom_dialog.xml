@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FE6601">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:id="@+id/view1" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title">
+
+            <TextView
+                android:layout_marginLeft="120dp"
+                android:text="Employee Details"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25px"
+                android:textColor="#FFFFFF"
+                android:fontFamily="TimesNewRoman"
+                android:id="@+id/textView1" />
+
+        </TableRow>
+    </TableLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:background="@drawable/scrollview_border"
+        android:scrollbarSize="5dp"
+        style="@style/scrollbar_shape_style"
+        android:layout_weight="1"
+        android:id="@+id/scrollView">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17px"
+                    android:textColor="#FE6601"
+                    android:fontFamily="TimesNewRoman" />
+
+
+            </TableRow>
+
+        </TableLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/dialogButtonOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:textSize="15px"
+            android:background="#FE6601"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:fontFamily="Calibri" />
+
+    </LinearLayout>
+
+    <!--<ScrollView-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="500dp"-->
+        <!--android:id="@+id/scrollView2">-->
+        <!-- -->
+        <!-- -->
+       <!-- -->
+
+
+    <!--</ScrollView>-->
+
+
+
+
+
+</LinearLayout>

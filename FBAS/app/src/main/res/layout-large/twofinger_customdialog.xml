@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content">
+
+    <!--android:paddingBottom="30dp"
+    android:layout_margin="20dp"
+    android:background="@drawable/dialog_bg"-->
+
+    <TextView android:text="First Finger"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/finger1"
+        android:paddingLeft="5dp"
+        android:textSize="25sp"
+        android:textColor="@color/glow_white"
+        android:fontFamily="TimesNewRoman"
+        android:textStyle="bold"
+        android:background="@drawable/table_row"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="33">
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="83dp"
+                android:layout_height="130dp"
+                android:background="#FFFFFF"
+                android:layout_gravity="center"
+                android:contentDescription="imageView1"
+                android:padding="4dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="33">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="83dp"
+                android:layout_height="130dp"
+                android:background="#FFFFFF"
+                android:layout_gravity="center"
+                android:contentDescription="imageView2"
+                android:padding="4dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="33">
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="83dp"
+                android:layout_height="130dp"
+                android:background="#FFFFFF"
+                android:layout_gravity="center"
+                android:contentDescription="@+id/RelativeLayout2"
+                android:padding="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView android:text="Second Finger"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/finger2"
+        android:paddingLeft="5dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/glow_white"
+        android:fontFamily="TimesNewRoman"
+        android:background="@drawable/table_row"
+        android:layout_marginTop="20dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="33">
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="83dp"
+                android:layout_height="130dp"
+                android:background="#FFFFFF"
+                android:layout_gravity="center"
+                android:contentDescription="imageView1"
+                android:padding="4dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="33">
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="83dp"
+                android:layout_height="130dp"
+                android:background="#FFFFFF"
+                android:layout_gravity="center"
+                android:contentDescription="imageView2"
+                android:padding="4dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="33">
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="83dp"
+                android:layout_height="130dp"
+                android:background="#FFFFFF"
+                android:layout_gravity="center"
+                android:contentDescription="@+id/RelativeLayout2"
+                android:padding="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp">
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/vertical_progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:max="100"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/table_row_rev"/>
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:text="@string/sensormessages"
+            android:textSize="20sp"
+            android:textColor="@color/glow_white"
+            android:fontFamily="TimesNewRoman"
+            android:background="@drawable/table_row_rev"/>
+    </LinearLayout>
+</LinearLayout>

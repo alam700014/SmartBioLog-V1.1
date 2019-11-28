@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/mylinearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left"
+                android:id="@+id/image"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20px"
+                android:textColor="#e63900"
+                android:textStyle="bold"
+                android:fontFamily="TimesNewRoman"
+                android:id="@+id/title" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e63900"
+            android:layout_marginTop="5dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:id="@+id/view3" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_marginTop="5dp">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="60dp"
+                android:id="@+id/AadhaarLogo"
+                android:src="@drawable/aadhaarlogolat" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/U_image"
+                android:src="@drawable/dummyphoto" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#e63900">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginLeft="30dp"
+                android:text="Personal Information"
+                android:textStyle="bold"
+                android:textSize="16px"
+                android:textColor="#FFFFFF"
+                android:fontFamily="TimesNewRoman" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman"
+                android:text="Name:" />
+
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:id="@+id/name"
+                android:enabled="false"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman" />
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman"
+                android:text="Date Of Birth:" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:id="@+id/dob"
+                android:enabled="false"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman"
+                android:text="Gender:" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:id="@+id/gender"
+                android:enabled="false"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman" />
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman"
+                android:text="Phone No:" />
+
+
+            <TextView
+                android:layout_width="250dp"
+                android:enabled="false"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone"
+                android:paddingLeft="50dp"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman"
+                android:text="Email Id:" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:enabled="false"
+                android:paddingLeft="50dp"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#e63900">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginLeft="30dp"
+                android:text="Personal Address"
+                android:textStyle="bold"
+                android:textSize="16px"
+                android:textColor="#FFFFFF"
+                android:fontFamily="TimesNewRoman" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman"
+                android:text="Care Of:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:id="@+id/careOf"
+                android:textStyle="bold"
+                android:textSize="15px"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman"
+                android:text="House No:" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:id="@+id/houseNo"
+                android:textStyle="bold"
+                android:textSize="15px"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman"
+                android:text="Street:" />
+
+
+            <TextView
+                android:layout_width="250dp"
+                android:enabled="false"
+                android:layout_height="wrap_content"
+                android:id="@+id/street"
+                android:paddingLeft="50dp"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman"
+                android:text="Post Office:" />
+
+
+            <TextView
+                android:layout_width="250dp"
+                android:enabled="false"
+                android:layout_height="wrap_content"
+                android:id="@+id/po"
+                android:paddingLeft="50dp"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman"
+                android:text="Vtc:" />
+
+
+            <TextView
+                android:layout_width="250dp"
+                android:enabled="false"
+                android:layout_height="wrap_content"
+                android:id="@+id/vtc"
+                android:paddingLeft="50dp"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman"
+                android:text="District:" />
+
+
+            <TextView
+                android:layout_width="250dp"
+                android:enabled="false"
+                android:layout_height="wrap_content"
+                android:id="@+id/district"
+                android:paddingLeft="50dp"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman"
+                android:text="Sub District:" />
+
+
+            <TextView
+                android:layout_width="250dp"
+                android:enabled="false"
+                android:layout_height="wrap_content"
+                android:id="@+id/subdistrict"
+                android:paddingLeft="50dp"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman"
+                android:text="State:" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/state"
+                android:enabled="false"
+                android:paddingLeft="50dp"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman"
+                android:text="Pin Code:" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pc"
+                android:enabled="false"
+                android:paddingLeft="50dp"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman" />
+
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman"
+                android:text="Landmark:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:id="@+id/landmark"
+                android:paddingLeft="50dp"
+                android:textStyle="bold"
+                android:textSize="15px"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman" />
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman"
+                android:text="Locality:" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:id="@+id/locality"
+                android:paddingLeft="50dp"
+                android:textStyle="bold"
+                android:textSize="15px"
+                android:textColor="#e63900"
+                android:fontFamily="TimesNewRoman" />
+
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

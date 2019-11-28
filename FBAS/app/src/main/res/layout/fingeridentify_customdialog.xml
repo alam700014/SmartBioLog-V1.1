@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="450dp">
+
+    <TextView android:text="Put Finger To Be Identified"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/finger1"
+        android:paddingLeft="5dp"
+        android:textSize="17px"
+        android:textColor="#FFFFFF"
+        android:fontFamily="TimesNewRoman"
+        android:background="#3D8C7F"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="33">
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="140dp"
+                android:layout_height="200dp"
+                android:background="@android:color/white"
+                android:layout_gravity="center"
+                android:contentDescription="imageView1"
+                android:padding="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/vertical_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:max="100"
+            android:padding="10dp"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:text="@string/sensormessages"
+            android:layout_margin="5dp"
+            android:textSize="17px"
+            android:textColor="#FFFFFF"
+            android:fontFamily="TimesNewRoman"
+            android:background="#3D8C7F" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="fill_parent"
+            android:layout_span="2"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_height="35dp"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:onClick="exit"
+            android:text="Exit"
+            android:textSize="17px"
+            android:background="#3D8C7F"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:fontFamily="Calibri"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

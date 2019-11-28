@@ -1,0 +1,209 @@
+<!--                                      Layout For Black Tab                                    -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/loginPage"
+    android:orientation="vertical"
+    tools:context="com.android.fortunaattendancesystem.activities.LoginActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tblMessage"
+        android:background="#FFDD4B39">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fade_black_gray">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hardwareConnection"
+                layout="@layout/hardwareconnection">
+
+            </include>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fade_black_gray">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:id="@+id/view2" />
+
+        </TableRow>
+
+
+        <!--<TableRow>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Devices Not Found...Please Connect Devices..."-->
+        <!--android:textSize="14px"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:fontFamily="Calibri"-->
+        <!--android:id="@+id/txtConnectionMessage"/>-->
+
+        <!--</TableRow>-->
+
+    </TableLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp">
+
+
+        <TableRow>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="5dp"
+                android:text="Enter Username:"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="@color/fade_black_gray"
+                android:fontFamily="Calibri"
+                android:id="@+id/edtUsername" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="@color/fade_black_gray"
+                android:fontFamily="Calibri"
+                android:id="@+id/txtUsername" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="55dp"
+                android:text="Enter Password:"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="@color/fade_black_gray"
+                android:fontFamily="Calibri" />
+
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:textSize="15px"
+                android:textStyle="bold"
+                android:textColor="@color/fade_black_gray"
+                android:fontFamily="Calibri"
+                android:id="@+id/txtPassword" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="55dp"
+                android:textAlignment="center"
+                android:text="Login"
+                android:textSize="15px"
+                android:background="#e63900"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:fontFamily="Calibri"
+                android:id="@+id/btnLogin" />
+
+        </TableRow>
+
+        <!--<TableRow>-->
+
+        <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_span="2"-->
+        <!--android:layout_marginTop="45dp"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:textAlignment="center"-->
+        <!--android:text="Grant Permission"-->
+        <!--android:textSize="15px"-->
+        <!--android:background="#FE6601"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:fontFamily="Calibri"-->
+        <!--android:visibility="invisible"-->
+        <!--android:id="@+id/btnMorphoPermission"/>-->
+
+        <!--</TableRow>-->
+
+
+        <!--<TableRow>-->
+
+        <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_span="2"-->
+        <!--android:layout_marginTop="45dp"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:textAlignment="center"-->
+        <!--android:text="Enumerate Device"-->
+        <!--android:textSize="15px"-->
+        <!--android:background="#FE6601"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:fontFamily="Calibri"-->
+        <!--android:id="@+id/btnEnumerateDevice"/>-->
+
+        <!--</TableRow>-->
+
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="215px"
+        android:layout_height="116px"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="320dp">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
+

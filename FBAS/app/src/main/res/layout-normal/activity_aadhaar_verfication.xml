@@ -1,0 +1,357 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/master__background"
+    android:weightSum="4">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".50">
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/fade_black_gray"/>
+-->
+        <include android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hardwareConnection"
+            layout="@layout/hardwareconnection">
+
+        </include>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/fade_black_gray"/>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/AadhaarLogo"
+            android:src="@drawable/aadhaarlogo1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:text="Put Finger On Reader To Be Authenticated"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:textColor="@color/glow_white"
+            android:fontFamily="TimesNewRoman"
+            android:background="@drawable/table_row"/>
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/vertical_progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:layout_gravity="center"
+            android:background="@drawable/table_row_rev"
+            android:padding="4dp"/>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:contentDescription="imageView1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/glow_white"
+            android:textStyle="bold"
+            android:fontFamily="TimesNewRoman"
+            android:text="Aadhaar ID"
+            android:id="@+id/textView25"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/table_row_rev"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="12dp"
+            android:id="@+id/AadhaarID"
+            android:hint="Enter 12 Digits Aadhaar Number"
+            android:textColorHint="@color/fade_black"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/dark_black"
+            android:fontFamily="TimesNewRoman"
+            android:inputType="number"
+            android:maxLength="12"
+            android:background="@drawable/inputbox"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".50">
+
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/sensormessages"
+            android:textSize="15sp"
+            android:textColor="@color/glow_white"
+            android:fontFamily="TimesNewRoman"
+            android:background="@drawable/table_row"
+            android:baselineAligned="true"
+            android:layout_gravity="bottom"/>
+
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="105dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@color/light_blue">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.25"
+                android:background="@drawable/pressed_button"
+                android:textSize="25sp"
+                android:text="1"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.25"
+                android:background="@drawable/pressed_button"
+                android:textSize="25sp"
+                android:text="2"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.25"
+                android:background="@drawable/pressed_button"
+                android:textSize="25sp"
+                android:text="3"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/btnbackspace"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.25"
+                android:background="@drawable/pressed_button"
+                android:text="Back\nSpace"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@color/light_blue">
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.25"
+                android:background="@drawable/pressed_button"
+                android:textSize="25sp"
+                android:text="4"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.25"
+                android:background="@drawable/pressed_button"
+                android:textSize="25sp"
+                android:text="5"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.25"
+                android:background="@drawable/pressed_button"
+                android:text="6"
+                android:textSize="25sp"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/btnreset"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.25"
+                android:background="@drawable/pressed_button"
+                android:text="Reset"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@color/light_blue">
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.25"
+                android:background="@drawable/pressed_button"
+                android:text="7"
+                android:textSize="25sp"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.25"
+                android:background="@drawable/pressed_button"
+                android:text="8"
+                android:textSize="25sp"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.25"
+                android:background="@drawable/pressed_button"
+                android:text="9"
+                android:textSize="25sp"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="0.25"
+                android:background="@drawable/pressed_button"
+                android:textSize="25sp"
+                android:text="0"
+                android:textColor="#FFF"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>-->
+
+</LinearLayout>

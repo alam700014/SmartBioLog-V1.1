@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.android.fortunaattendancesystem">
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <!-- Modified By Ankit Kumar on 08-09-2016(For Wifi Connection) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SET_TIME_ZONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.usb.accessory" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- Modified By Sanjay Shyamal on 22-11-2017 -->
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/mytheme">
+
+        <!-- <uses-library android:name="com.google.android.things"/> -->
+
+
+        <!-- <activity -->
+        <!-- android:name=".activities.LoginActivity" -->
+        <!-- android:hardwareAccelerated="true" -->
+        <!-- android:launchMode="singleTop" -->
+        <!-- android:screenOrientation="reversePortrait"> -->
+
+        // android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+
+        //.activities.LoginActivity
+        <activity
+            android:name=".activities.LoginSplashActivity"
+            android:label="Smart Bio Log"
+            android:screenOrientation="reversePortrait"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".extras.ShutdownReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+                <action android:name="android.intent.action.QUICKBOOT_POWEROFF" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
+        <service
+            android:name=".mqtt.MqttMessageService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- <activity -->
+        <!-- android:name="com.forlinx.android.AdcActivity" -->
+        <!-- android:label="ADC" -->
+        <!-- android:screenOrientation="landscape" -->
+        <!-- &gt; -->
+        <!-- </activity> -->
+
+        <service android:name="com.forlinx.android.GetValueService" />
+
+        <!-- <service android:name="com.android.fortunaattendancesystem.mqtt.MqttService"/> -->
+
+
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="Login"
+            android:screenOrientation="reversePortrait" />
+
+        <activity
+            android:name=".activities.EmployeeAttendanceActivity"
+            android:label="Attendance"
+            android:screenOrientation="reversePortrait" />
+        <activity
+            android:name=".activities.HomeActivity"
+            android:label="Home"
+            android:screenOrientation="reversePortrait" />
+        <activity
+            android:name=".activities.EmployeeEnrollmentFirstActivity"
+            android:icon="@drawable/formfill"
+            android:label="Employee Enroll"
+            android:screenOrientation="reversePortrait" />
+        <activity
+            android:name=".activities.EmployeeEnrollmentSecondActivity"
+            android:label="Employee Enroll"
+            android:screenOrientation="reversePortrait" />
+        <activity
+            android:name=".activities.EmployeeEnrollmentPreviewActivity"
+            android:icon="@drawable/empdetails"
+            android:label="Details Preview"
+            android:screenOrientation="reversePortrait" />
+        <activity
+            android:name=".activities.FingerEnrollUpdateDialogActivity"
+            android:label="Finger Enroll"
+            android:screenOrientation="reversePortrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".usbconnection.USBConnectionCreator"
+            android:label="@string/title_activity_hardware_connection_receiver"
+            android:screenOrientation="reversePortrait" />
+        <activity
+            android:name=".activities.SmartCardActivity"
+            android:label="Smart Card"
+            android:screenOrientation="reversePortrait" />
+        <activity
+            android:name=".activities.MasterDataEntryActivity"
+            android:label="Master Data Entry"
+            android:screenOrientation="reversePortrait" />
+        <activity
+            android:name=".activities.DeleteUserActivity"
+            android:label="User Deletion"
+            android:screenOrientation="reversePortrait" />
+        <activity
+            android:name=".helper.ISOConvertion"
+            android:label="@string/title_activity_isoconvertion"
+            android:screenOrientation="reversePortrait" />
+        <activity
+            android:name=".activities.User"
+            android:label="@string/title_activity_user"
+            android:screenOrientation="reversePortrait"
+            android:windowSoftInputMode="adjustPan|adjustResize" />
+        <activity
+            android:name=".fm220.FM220callBack"
+            android:label="Finger Enroll"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".activities.EmployeeFingerEnrollmentActivity"
+            android:label="Finger Enroll"
+            android:screenOrientation="reversePortrait" />
+        <activity
+            android:name=".activities.CameraPreviewActivity"
+            android:label="Camera Preview" />
+        <activity
+            android:name=".activities.EmployeeAttendanceStartekActivity"
+            android:screenOrientation="reversePortrait" />
+    </application>
+
+</manifest>

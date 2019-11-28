@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/fade_black_gray">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fade_black_gray">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <include android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hardwareConnection"
+                layout="@layout/hardwareconnection">
+
+            </include>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fade_black_gray">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:id="@+id/view2" />
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="40dp">
+
+        <com.android.fortunaattendancesystem.extras.DigitalClock
+            android:id="@+id/digitalClock1"
+            android:textSize="50px"
+            android:textColor="#FFFFFF"
+            android:fontFamily="Calibri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="33">
+
+            <TextView
+                android:text="                    Put Smart Card On Reader To Be Verified"
+                android:id="@+id/fingerIndex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:textSize="17px"
+                android:textColor="#FFFFFF"
+                android:fontFamily="TimesNewRoman"
+                android:background="#e63900"/>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_marginTop="20dp"
+                android:layout_width="140dp"
+                android:layout_height="250dp"
+                android:background="#474747"
+                android:layout_gravity="center"
+                android:contentDescription="imageView1"
+                android:padding="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="300dp"
+        android:layout_marginLeft="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/vertical_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:max="100"
+            android:padding="10dp"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="300dp"
+        android:layout_marginLeft="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:text="@string/sensormessages"
+            android:layout_margin="5dp"
+            android:textSize="17px"
+            android:textColor="#FFFFFF"
+            android:fontFamily="TimesNewRoman"
+            android:background="#e63900" />
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:layout_marginTop="40dp">-->
+
+
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_rebootsoft"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_span="2"-->
+            <!--android:layout_marginLeft="50dp"-->
+            <!--android:layout_marginRight="50dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:onClick="exit"-->
+            <!--android:text="Exit"-->
+            <!--android:textSize="15px"-->
+            <!--android:background="#3D8C7F"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--android:fontFamily="Calibri"/>-->
+
+    <!--</LinearLayout>-->
+
+
+
+
+
+
+</LinearLayout>

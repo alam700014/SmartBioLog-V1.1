@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40dp"
+                android:text="FORTUNA"
+                android:background="#FE6601"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:fontFamily="Calibri"
+                android:id="@+id/t1"
+                android:gravity="left"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dt"
+                android:background="#FE6601"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:fontFamily="Calibri"
+                android:textSize="40dp"
+                android:gravity="right" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dispaly"
+                android:gravity="center"
+                android:layout_below="@+id/view"
+                android:text="WEL-COME"
+                android:background="#FE6601"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:fontFamily="Calibri"
+                android:textSize="70dp" />
+
+        </TableRow>
+
+        <TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="9dp"
+                android:id="@+id/view1"
+                android:layout_above="@+id/viewflipper"
+                android:background="#ff020103" />
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <ViewFlipper
+                android:id="@+id/viewflipper"
+                android:layout_width="fill_parent"
+                android:layout_height="400dp"
+                android:autoStart="true"
+                android:background="#FE6601"
+                android:flipInterval="2000"
+                android:layout_weight="0.77"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/dispaly">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/I1"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/I2"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/I3"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/I4"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/I5"
+                    />
+            </ViewFlipper>
+
+        </TableRow>
+
+        <TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="9dp"
+                android:layout_below="@+id/viewflipper"
+                android:id="@+id/view2"
+                android:background="#ff020103" />
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_marginTop="50dp">
+
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:id="@+id/symbol"
+                android:background="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:text="POWERED BY FORTUNA"
+                android:textStyle="bold"
+                android:fontFamily="Calibri"
+                android:textColor="#FE6601"
+                android:textSize="20dp"
+                android:background="#FFFFFF"
+                android:id="@+id/textView4" />
+
+        </TableRow>
+
+
+    </TableLayout>
+    <android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#FE6601"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp" />
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

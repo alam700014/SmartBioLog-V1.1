@@ -1,0 +1,594 @@
+<!--                                 Layout For White Tab(3G7+)                                        -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/master__background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <!--<ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/logo" />-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/border">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dummyphoto" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        style="@style/scrollbar_shape_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/grey_200"
+        android:fillViewport="true"
+        android:scrollbarSize="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:background="@drawable/table_row"
+                android:fontFamily="TimesNewRoman"
+                android:paddingLeft="10dp"
+                android:text="Employee Details"
+                android:textAlignment="center"
+                android:textColor="@color/glow_white"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="Employee ID:"
+                android:textColor="@color/gray"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/EmployeeID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:textColor="@color/dark_black"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="Card ID:"
+                android:textColor="@color/gray"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/CardID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:textColor="@color/dark_black"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="Name:"
+                android:textColor="@color/gray"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:textColor="@color/dark_black"
+                android:textSize="23sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="Aadhaar ID:"
+                android:textColor="@color/gray"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/AadhaarId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:textColor="@color/dark_black"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="Blood Group:"
+                android:textColor="@color/gray"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/bloodgroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:textColor="@color/dark_black"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="Site Code:"
+                android:textColor="@color/gray"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sitecode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:textColor="@color/dark_black"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="Mobile Number:"
+                android:textColor="@color/gray"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/MobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:textColor="@color/dark_black"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="Mail ID:"
+                android:textColor="@color/gray"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/MailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:textColor="@color/dark_black"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="Valid Upto:"
+                android:textColor="@color/gray"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/ValidUpto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:textColor="@color/dark_black"
+                android:textSize="23sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="Date Of Birth:"
+                android:textColor="@color/gray"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/BirthDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:textColor="@color/dark_black"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="PIN:"
+                android:textColor="@color/gray"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/PIN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:textColor="@color/dark_black"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="Group ID:"
+                android:textColor="@color/gray"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/GroupId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:textColor="@color/dark_black"
+                android:textSize="23sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:background="@drawable/table_row"
+                android:fontFamily="TimesNewRoman"
+                android:paddingLeft="10dp"
+                android:text="Training Center Details"
+                android:textAlignment="center"
+                android:textColor="@color/glow_white"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="Training Center Name:"
+                android:textColor="@color/gray"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TrainingCenterName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:textColor="@color/dark_black"
+                android:textSize="23sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="Batch Name:"
+                android:textColor="@color/gray"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/BatchName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:textColor="@color/dark_black"
+                android:textSize="23sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:background="@drawable/table_row"
+                android:fontFamily="TimesNewRoman"
+                android:paddingLeft="10dp"
+                android:text="Finger Enrolled Details"
+                android:textAlignment="center"
+                android:textColor="@color/glow_white"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="Enrollment Status:"
+                android:textColor="@color/gray"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/enrollstatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:textColor="@color/dark_black"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="Number Of Fingers:"
+                android:textColor="@color/gray"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/nosfinger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:textColor="@color/dark_black"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="Verification Mode:"
+                android:textColor="@color/gray"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Varification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:textColor="@color/dark_black"
+                android:textSize="23sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:background="@drawable/table_row"
+                android:fontFamily="TimesNewRoman"
+                android:paddingLeft="10dp"
+                android:text="Smart Card Details"
+                android:textAlignment="center"
+                android:textColor="@color/glow_white"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="Smart Card Version:"
+                android:textColor="@color/gray"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/SmartCardVersion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:textColor="@color/dark_black"
+                android:textSize="23sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:background="@drawable/table_row"
+                android:fontFamily="TimesNewRoman"
+                android:paddingLeft="10dp"
+                android:text="Admin Use Only"
+                android:textAlignment="center"
+                android:textColor="@color/glow_white"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="Black Listed:"
+                android:textColor="@color/gray"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/IsBlacklisted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:textColor="@color/dark_black"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="Access Right:"
+                android:textColor="@color/gray"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/IsAccessRightEnabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:textColor="@color/dark_black"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="Lock Open:"
+                android:textColor="@color/gray"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/IsLockOpenWhenAllowed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="TimesNewRoman"
+                android:textColor="@color/dark_black"
+                android:textSize="23sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutThatDoesNotScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pressed_button"
+            android:drawableLeft="@drawable/saveico"
+            android:drawablePadding="5dp"
+            android:fontFamily="Calibri"
+            android:gravity="center"
+            android:onClick="saveData"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Save"
+            android:textAlignment="center"
+            android:textColor="@color/glow_white"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

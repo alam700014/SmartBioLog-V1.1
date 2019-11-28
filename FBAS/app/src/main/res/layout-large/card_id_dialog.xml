@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="30dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/dialog_bg">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_title_bar">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="left"
+            android:id="@+id/image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#e63900"
+            android:textStyle="bold"
+            android:fontFamily="TimesNewRoman"
+            android:id="@+id/title" />
+
+
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#e63900"
+        android:layout_marginTop="5dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/view3" />
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+
+        <TextView
+            android:text="Pin:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/fade_black_gray_2"
+            android:fontFamily="TimesNewRoman" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Pin"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/fade_black_gray_2"
+            android:inputType="number"
+            android:maxLength="4"
+            android:fontFamily="TimesNewRoman"
+            android:hint="Enter 4 Digits Pin"
+            android:background="@drawable/input_box_white"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/btn_Save"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Confirm"
+            android:textSize="15sp"
+            android:background="@drawable/pressed_button"
+            android:textStyle="bold"
+            android:textColor="@color/glow_white"
+            android:fontFamily="Calibri" />
+
+        <Button
+            android:id="@+id/btn_Cancel"
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textSize="15sp"
+            android:background="@drawable/pressed_button"
+            android:textStyle="bold"
+            android:textColor="@color/glow_white"
+            android:fontFamily="Calibri" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<!--                        Layout For White Tab(3G7+)                                           -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/master__background"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context="com.android.fortunaattendancesystem.activities.LoginSplashActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:layout_marginLeft="130sp"
+            android:layout_marginTop="150sp"
+            android:src="@drawable/bio_mobile" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100sp"
+            android:fontFamily="TimesRoman"
+            android:text="Smart Bio Log"
+            android:textColor="#FFCC69"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120sp"
+        android:gravity="bottom">
+
+        <ImageView
+            android:id="@+id/logo1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10sp"
+            android:src="@drawable/aadhaarlogo1" />
+
+        <ImageView
+            android:id="@+id/logo2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="140sp"
+            android:layout_marginTop="10sp"
+            android:src="@drawable/logo" />
+
+    </LinearLayout>
+</LinearLayout>
+
+

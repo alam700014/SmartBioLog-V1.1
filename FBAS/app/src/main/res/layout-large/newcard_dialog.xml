@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="30dp"
+    android:layout_margin="50dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/dialog_title_bar">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="left"
+            android:id="@+id/image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="30sp"
+            android:textColor="@color/light_orange"
+            android:textStyle="bold"
+            android:fontFamily="TimesNewRoman"
+            android:id="@+id/title" />
+
+
+    </LinearLayout>
+
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e63900"
+        android:layout_marginTop="10dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/view3" />
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="47dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/fade_black_gray_2"
+            android:fontFamily="TimesNewRoman"
+            android:text="Employee Id:"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18sp"
+            android:maxLength="16"
+            android:inputType="none"
+            android:editable="false"
+            android:textColor="@color/fade_black_gray_2"
+            android:fontFamily="TimesNewRoman"
+            android:id="@+id/empId"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/fade_black_gray_2"
+            android:fontFamily="TimesNewRoman"
+            android:text="Hot-List Card Ver:"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18sp"
+            android:maxLength="8"
+            android:inputType="none"
+            android:editable="false"
+            android:textColor="@color/fade_black_gray_2"
+            android:fontFamily="TimesNewRoman"
+            android:id="@+id/oldCardVer" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/fade_black_gray_2"
+            android:fontFamily="TimesNewRoman"
+            android:text="New Card Ver:"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="18sp"
+            android:maxLength="8"
+            android:inputType="none"
+            android:editable="false"
+            android:textColor="@color/fade_black_gray_2"
+            android:fontFamily="TimesNewRoman"
+            android:id="@+id/newCardVer" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/fade_black_gray_2"
+            android:fontFamily="TimesNewRoman"
+            android:text="Hot-List Reason:" />
+
+        <Spinner
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/fade_black_gray_2"
+            android:fontFamily="TimesNewRoman"
+            android:id="@+id/reason"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pressed_button"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Issue Card"
+            android:textSize="15sp"
+            android:textColor="@color/glow_white"
+            android:fontFamily="TimesNewRoman"
+            android:id="@+id/btnOk" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pressed_button"
+            android:layout_marginLeft="15dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Cancel"
+            android:textSize="15sp"
+            android:textColor="@color/glow_white"
+            android:fontFamily="TimesNewRoman"
+            android:id="@+id/btnCancel" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

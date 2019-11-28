@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/mylinearlayout"
+    android:layout_width="400dp"
+    android:layout_height="500dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20px"
+            android:layout_marginLeft="10dp"
+            android:textColor="#e63900"
+            android:textStyle="bold"
+            android:fontFamily="TimesNewRoman"
+            android:id="@+id/title" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#e63900"
+            android:id="@+id/view3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dp"
+            android:layout_marginLeft="80dp"
+            android:src="@drawable/fingermatch"
+            android:id="@+id/fingermatch" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/U_image"
+            android:src="@drawable/dummyphoto" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textSize="17px"
+            android:textStyle="bold"
+            android:textColor="#e63900"
+            android:fontFamily="TimesNewRoman"
+            android:text="Employee Id:" />
+
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="83dp"
+            android:id="@+id/EmployeeID"
+            android:enabled="false"
+            android:textSize="15px"
+            android:textStyle="bold"
+            android:textColor="#e63900"
+            android:fontFamily="TimesNewRoman" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textSize="17px"
+            android:textStyle="bold"
+            android:textColor="#e63900"
+            android:fontFamily="TimesNewRoman"
+            android:text="Card Id:" />
+
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="120dp"
+            android:id="@+id/CardID"
+            android:enabled="false"
+            android:textSize="15px"
+            android:textStyle="bold"
+            android:textColor="#e63900"
+            android:fontFamily="TimesNewRoman" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textSize="17px"
+            android:textStyle="bold"
+            android:textColor="#e63900"
+            android:fontFamily="TimesNewRoman"
+            android:text="Employee Name:" />
+
+
+        <TextView
+            android:layout_width="250dp"
+            android:enabled="false"
+            android:layout_height="wrap_content"
+            android:id="@+id/Name"
+            android:paddingLeft="50dp"
+            android:textSize="15px"
+            android:textStyle="bold"
+            android:textColor="#e63900"
+            android:fontFamily="TimesNewRoman" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textSize="17px"
+            android:textStyle="bold"
+            android:textColor="#e63900"
+            android:fontFamily="TimesNewRoman"
+            android:text="Date Of Birth:" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:id="@+id/DOB"
+            android:paddingLeft="75dp"
+            android:textStyle="bold"
+            android:textSize="15px"
+            android:textColor="#e63900"
+            android:fontFamily="TimesNewRoman" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textSize="17px"
+            android:textStyle="bold"
+            android:textColor="#e63900"
+            android:fontFamily="TimesNewRoman"
+            android:text="Valid Upto:" />
+
+
+        <TextView
+            android:layout_width="250dp"
+            android:enabled="false"
+            android:layout_height="wrap_content"
+            android:id="@+id/ValidUpto"
+            android:paddingLeft="90dp"
+            android:textSize="15px"
+            android:textStyle="bold"
+            android:textColor="#e63900"
+            android:fontFamily="TimesNewRoman" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textSize="17px"
+            android:textStyle="bold"
+            android:textColor="#e63900"
+            android:fontFamily="TimesNewRoman"
+            android:text="Smard Card Version:" />
+
+
+        <TextView
+            android:layout_width="250dp"
+            android:enabled="false"
+            android:layout_height="wrap_content"
+            android:id="@+id/SmartCardVer"
+            android:paddingLeft="20dp"
+            android:textSize="15px"
+            android:textStyle="bold"
+            android:textColor="#e63900"
+            android:fontFamily="TimesNewRoman" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textSize="17px"
+            android:textStyle="bold"
+            android:textColor="#e63900"
+            android:fontFamily="TimesNewRoman"
+            android:text="Attendance Time:" />
+
+
+        <TextView
+            android:layout_width="250dp"
+            android:enabled="false"
+            android:layout_height="wrap_content"
+            android:id="@+id/AttendanceTime"
+            android:paddingLeft="40dp"
+            android:textSize="15px"
+            android:textStyle="bold"
+            android:textColor="#e63900"
+            android:fontFamily="TimesNewRoman" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+    <!--<TableLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content">-->
+
+    <!--<TableRow--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginTop="15dp">-->
+
+
+    <!--<ImageView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="10dp"--><!--android:layout_gravity="left"--><!--android:id="@+id/image" />-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:textSize="20px"--><!--android:textColor="#e63900"--><!--android:textStyle="bold"--><!--android:fontFamily="TimesNewRoman"--><!--android:id="@+id/title" />-->
+
+
+    <!--</TableRow>-->
+
+    <!--<TableRow--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:background="#e63900"--><!--android:layout_marginTop="5dp">-->
+
+    <!--<View--><!--android:layout_width="match_parent"--><!--android:layout_height="2dp"--><!--android:id="@+id/view3" />-->
+
+    <!--</TableRow>-->
+
+
+    <!--</TableLayout>-->
+
+    <!--<TableLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content">-->
+
+
+    <!--<TableRow android:layout_marginTop="10dp">-->
+
+    <!--<ImageView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_span="2"--><!--android:layout_marginLeft="200dp"--><!--android:id="@+id/U_image"--><!--android:src="@drawable/dummyphoto" />-->
+
+    <!--</TableRow>-->
+
+    <!--<TableRow--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:layout_marginTop="20dp">-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="30dp"--><!--android:textSize="17px"--><!--android:textStyle="bold"--><!--android:textColor="#e63900"--><!--android:fontFamily="TimesNewRoman"--><!--android:text="Employee Id:" />-->
+
+
+    <!--<TextView--><!--android:layout_width="250dp"--><!--android:layout_height="wrap_content"--><!--android:paddingLeft="50dp"--><!--android:id="@+id/EmployeeID"--><!--android:enabled="false"--><!--android:textSize="15px"--><!--android:textStyle="bold"--><!--android:textColor="#e63900"--><!--android:fontFamily="TimesNewRoman" />-->
+
+
+    <!--</TableRow>-->
+
+
+    <!--<TableRow android:layout_marginTop="10dp">-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="30dp"--><!--android:textSize="17px"--><!--android:textStyle="bold"--><!--android:textColor="#e63900"--><!--android:fontFamily="TimesNewRoman"--><!--android:text="Employee Name:" />-->
+
+
+    <!--<TextView--><!--android:layout_width="250dp"--><!--android:enabled="false"--><!--android:layout_height="wrap_content"--><!--android:id="@+id/Name"--><!--android:paddingLeft="50dp"--><!--android:textSize="15px"--><!--android:textStyle="bold"--><!--android:textColor="#e63900"--><!--android:fontFamily="TimesNewRoman" />-->
+
+
+    <!--</TableRow>-->
+
+    <!--<TableRow android:layout_marginTop="10dp">-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="30dp"--><!--android:textSize="17px"--><!--android:textStyle="bold"--><!--android:textColor="#e63900"--><!--android:fontFamily="TimesNewRoman"--><!--android:text="Date Of Birth:" />-->
+
+    <!--<TextView--><!--android:layout_width="250dp"--><!--android:layout_height="wrap_content"--><!--android:enabled="false"--><!--android:id="@+id/DOB"--><!--android:paddingLeft="50dp"--><!--android:textStyle="bold"--><!--android:textSize="15px"--><!--android:textColor="#e63900"--><!--android:fontFamily="TimesNewRoman" />-->
+
+
+    <!--</TableRow>-->
+
+    <!--<TableRow android:layout_marginTop="10dp">-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="30dp"--><!--android:textSize="17px"--><!--android:textStyle="bold"--><!--android:textColor="#e63900"--><!--android:fontFamily="TimesNewRoman"--><!--android:text="Valid Upto:" />-->
+
+
+    <!--<TextView--><!--android:layout_width="250dp"--><!--android:enabled="false"--><!--android:layout_height="wrap_content"--><!--android:id="@+id/ValidUpto"--><!--android:paddingLeft="50dp"--><!--android:textSize="15px"--><!--android:textStyle="bold"--><!--android:textColor="#e63900"--><!--android:fontFamily="TimesNewRoman" />-->
+
+    <!--</TableRow>-->
+
+    <!--<TableRow android:layout_marginTop="10dp">-->
+
+    <!--<TextView--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginLeft="30dp"--><!--android:textSize="17px"--><!--android:textStyle="bold"--><!--android:textColor="#e63900"--><!--android:fontFamily="TimesNewRoman"--><!--android:text="Smard Card Version:" />-->
+
+
+    <!--<TextView--><!--android:layout_width="250dp"--><!--android:enabled="false"--><!--android:layout_height="wrap_content"--><!--android:id="@+id/SmartCardVer"--><!--android:paddingLeft="50dp"--><!--android:textSize="15px"--><!--android:textStyle="bold"--><!--android:textColor="#e63900"--><!--android:fontFamily="TimesNewRoman" />-->
+
+    <!--</TableRow>-->
+
+    <!--</TableLayout>-->
+
+    <!--</LinearLayout>-->
+
+

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Dialog_No_Border"
+    android:layout_width="400dp"
+    android:layout_height="480dp"
+    android:background="@drawable/setting_scroll_bg"
+    android:id="@+id/llroot"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:background="@drawable/dialog_title_bar"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="TimesNewRoman"
+                        android:textColor="@color/heavy_orange"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:id="@+id/image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/closew" />
+                </FrameLayout>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table_row"
+            android:drawableLeft="@drawable/setting_hd"
+            android:drawablePadding="10dp"
+            android:fontFamily="TimesNewRoman"
+            android:textAlignment="center"
+            android:textColor="@color/glow_white"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llHexToDec"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="TimesNewRoman"
+            android:text="Hex to Dec Conversion : "
+            android:textColor="@color/glow_white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/onHexToDec"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:enabled="false"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/onHexToDecYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="Yes"
+                android:textColor="@color/glow_white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/onHexToDecNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:checked="true"
+                android:fontFamily="TimesNewRoman"
+                android:text="No"
+                android:textColor="@color/glow_white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llSiteCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="TimesNewRoman"
+            android:text="Site Code Enabled : "
+            android:textColor="@color/glow_white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/onSiteCodeEnabled"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:enabled="false"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/onSiteCodeEnabledYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="Yes"
+                android:textColor="@color/glow_white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/onSiteCodeEnabledNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:checked="true"
+                android:fontFamily="TimesNewRoman"
+                android:text="No"
+                android:textColor="@color/glow_white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llCardNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="TimesNewRoman"
+            android:text="Formation Of Card No : "
+            android:textColor="@color/glow_white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+        <RadioGroup
+            android:id="@+id/onCardNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight=".50"
+            android:enabled="false"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/sixteenbit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:checked="true"
+                android:fontFamily="TimesNewRoman"
+                android:text="16 bit"
+                android:textColor="@color/glow_white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/twentyfourbit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="24 bit"
+                android:textColor="@color/glow_white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/thirtytwobit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="32 bit"
+                android:textColor="@color/glow_white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/sixteenbitAndSiteCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="16 bit + Site Code"
+                android:textColor="@color/glow_white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/twentyfourbitAndSiteCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="TimesNewRoman"
+                android:text="24 bit + Site Code"
+                android:textColor="@color/glow_white"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_Save"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pressed_button"
+            android:fontFamily="TimesNewRoman"
+            android:text="Save"
+            android:textColor="@color/glow_white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_Cancel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/pressed_button"
+            android:fontFamily="TimesNewRoman"
+            android:text="Close"
+            android:textColor="@color/glow_white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

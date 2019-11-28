@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fade_black">#ff6c6767</color>
+    <color name="glow_white">#FFFFFF</color>
+    <color name="light_gray">#bbbbbb</color>
+    <color name="light_gray_2">#D3D3D3</color>
+    <color name="dark_gray">#A9A9A9</color>
+    <color name="gray">#808080</color>
+    <color name="light_orange">#ffff571a</color>
+    <color name="heavy_orange">#ffe62505</color>
+    <color name="light_orange_2">#ffff4501</color>
+    <color name="red">#bf0000</color>
+    <color name="light_red">#ff0000</color>
+    <color name="light_pink">#ffff54f4</color>
+    <color name="dark_black">#ff3c3f41</color>
+    <color name="fade_black_gray">#ff3c3f41</color>
+    <color name="fade_black_gray_2">#8e3a3f41</color>
+    <color name="light_blue_2">#ff26f5ff</color>
+    <color name="deep_sky_blue">#00BFFF</color>
+    <color name="light_blue">#ff54f6e3</color>
+    <color name="fade_blue">#ff0dc5e6</color>
+    <color name="fade_blue_2">#009999</color>
+    <color name="fade_blue_3">#2980b9</color>
+    <color name="fade_yellow">#fffff6b7</color>
+    <color name="fade_grey">#ffffbf85</color>
+    <color name="dark_green">#008000</color>
+    <color name="light_green">#66ff66</color>
+    <color name="lime_green">#11d648</color>
+    <color name="light_focused_blue">#FF33B5E5</color>
+    <color name="light_blue_600">#039BE5</color>
+    <color name="transparent">#00000000</color>
+
+    <!--material color-->
+    <color name="grey_50">#FAFAFA</color>
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_400">#BDBDBD</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="grey_600">#757575</color>
+    <color name="grey_700">#616161</color>
+    <color name="grey_800">#424242</color>
+    <color name="grey_900">#212121</color>
+
+
+    //Purple material color
+    <color name="purple_50">#F3E5F5</color>
+    <color name="purple_100">#E1BEE7</color>
+    <color name="purple_200">#CE93D8</color>
+    <color name="purple_300">#BA68C8</color>
+    <color name="purple_400">#AB47BC</color>
+    <color name="purple_500">#9C27B0</color>
+    <color name="purple_600">#8E24AA</color>
+    <color name="purple_700">#7B1FA2</color>
+    <color name="purple_800">#6A1B9A</color>
+    <color name="purple_900">#4A148C</color>
+    <color name="purple_A100">#EA80FC</color>
+    <color name="purple_A200">#E040FB</color>
+    <color name="purple_A400">#D500F9</color>
+    <color name="purple_A700">#AA00FF</color>
+
+    //Deep Purple material color
+    <color name="dee_purple_50">#EDE7F6</color>
+    <color name="dee_purple_100">#D1C4E9</color>
+    <color name="dee_purple_200">#B39DDB</color>
+    <color name="dee_purple_300">#9575CD</color>
+    <color name="dee_purple_400">#7E57C2</color>
+    <color name="dee_purple_500">#673AB7</color>
+    <color name="dee_purple_600">#5E35B1</color>
+    <color name="dee_purple_700">#512DA8</color>
+    <color name="dee_purple_800">#4527A0</color>
+    <color name="dee_purple_900">#311B92</color>
+    <color name="dee_purple_A100">#B388FF</color>
+    <color name="dee_purple_A200">#7C4DFF</color>
+    <color name="dee_purple_A400">#651FFF</color>
+    <color name="dee_purple_A700">#6200EA</color>
+
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+</resources>

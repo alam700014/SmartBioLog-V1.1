@@ -1,0 +1,1151 @@
+<!--                                Layout For White Tab(3G7+)                                         -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/smartcd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/smartcard_scrollview_border"
+    android:orientation="vertical">
+
+
+    <!-- BEGIN : Avoid the keypad deployment when the activity starts -->
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+    <!-- END : Avoid the keypad deployment when the activity starts -->
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fade_black_gray">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp" />
+
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <include
+            android:id="@+id/hardwareConnection"
+            layout="@layout/hardwareconnection"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"></include>
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fade_black_gray">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:id="@+id/view2" />
+
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp">
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5">
+
+                    <EditText
+                        android:id="@+id/empid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/inputboxleftcurve"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="center|center_vertical"
+                        android:hint="Enter Employee ID"
+                        android:imeOptions="actionDone"
+                        android:inputType="textCapCharacters"
+                        android:marqueeRepeatLimit="8"
+                        android:maxLength="16"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/fade_black_gray"
+                        android:textColorHint="#ff6c6767"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/readdb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/pressed_buttton_curve_right"
+                        android:drawableLeft="@drawable/search_btn"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Search"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                    <!--<ImageButton-->
+
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="520dp"-->
+                    <!--android:src="@drawable/getemployee"-->
+                    <!--android:id="@+id/readdb" />-->
+
+
+                </FrameLayout>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@drawable/button_border"-->
+    <!--android:layout_marginRight="2dp"-->
+    <!--android:layout_marginLeft="2dp"-->
+    <!--android:layout_marginTop="20dp">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:padding="5dp"-->
+    <!--android:textStyle="bold"-->
+    <!--android:text="Employee Details"-->
+    <!--android:textSize="17px"-->
+    <!--android:textColor="#FFFFFF"-->
+    <!--android:fontFamily="Calibri" />-->
+
+
+    <!--</LinearLayout>-->
+
+
+    <!--android:background="@drawable/scrollview_border"-->
+    <ScrollView
+        android:id="@+id/scrollViewcd"
+        android:layout_width="match_parent"
+        android:layout_height="850dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/smartcard_background"
+        android:fillViewport="true">
+
+        <!--<HorizontalScrollView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="200dp">-->
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:id="@+id/message"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/fade_black_gray"
+            android:fontFamily="TimesNewRoman"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="5dp"/>-->
+
+        <LinearLayout
+            android:id="@+id/smartcard_read"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/glow_white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row"
+                    android:fontFamily="Calibri"
+                    android:gravity="center"
+                    android:text="Database Details"
+                    android:textColor="@color/glow_white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/table_row_rev"
+                    android:enabled="false"
+                    android:fontFamily="Calibri"
+                    android:gravity="center"
+                    android:text="Employee Details"
+                    android:textColor="@color/glow_white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/smartcard_db_enroll_label"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:fontFamily="Calibri"
+                    android:gravity="right"
+                    android:text="Enrollment No :"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/smartcard_db_enroll"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:enabled="false"
+                    android:fontFamily="Calibri"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:fontFamily="Calibri"
+                    android:gravity="right"
+                    android:text="Card Serial No :"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/smartcard_db_sno"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:enabled="false"
+                    android:fontFamily="Calibri"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:fontFamily="Calibri"
+                    android:gravity="right"
+                    android:text="Employee ID:"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/smartcard_db_empid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:enabled="false"
+                    android:fontFamily="Calibri"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:fontFamily="Calibri"
+                    android:gravity="right"
+                    android:text="Card ID:"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/smartcard_db_cardid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:enabled="false"
+                    android:fontFamily="Calibri"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:fontFamily="Calibri"
+                    android:gravity="right"
+                    android:text="Name:"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/smartcard_db_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:enabled="false"
+                    android:fontFamily="Calibri"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:fontFamily="Calibri"
+                    android:gravity="right"
+                    android:text="Aadhaar Id :"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/smartcard_db_aadhaar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:enabled="false"
+                    android:fontFamily="Calibri"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:fontFamily="Calibri"
+                    android:gravity="right"
+                    android:text="Blood Group :"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/smartcard_db_bloodgroup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:enabled="false"
+                    android:fontFamily="Calibri"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:fontFamily="Calibri"
+                    android:gravity="right"
+                    android:text="Date Of Birth :"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/smartcard_db_dob"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:enabled="false"
+                    android:fontFamily="Calibri"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:fontFamily="Calibri"
+                    android:gravity="right"
+                    android:text="Validity Date :"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/smartcard_db_validity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:enabled="false"
+                    android:fontFamily="Calibri"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:fontFamily="Calibri"
+                    android:gravity="right"
+                    android:text="Site Code :"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/smartcard_db_sitecode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:enabled="false"
+                    android:fontFamily="Calibri"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:fontFamily="Calibri"
+                    android:gravity="right"
+                    android:text="Smart Card Version :"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/smartcard_db_cardversion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:enabled="false"
+                    android:fontFamily="Calibri"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:background="@drawable/table_row"
+                    android:fontFamily="Calibri"
+                    android:gravity="center"
+                    android:text="Finger Details"
+                    android:textColor="@color/glow_white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:fontFamily="Calibri"
+                    android:gravity="right"
+                    android:text="Finger Number :"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/smartcard_db_fnumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:enabled="false"
+                    android:fontFamily="Calibri"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:fontFamily="Calibri"
+                    android:gravity="right"
+                    android:text="Finger Index :"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/smartcard_db_findex"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:enabled="false"
+                    android:fontFamily="Calibri"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:fontFamily="Calibri"
+                    android:gravity="right"
+                    android:text="Finger Quality :"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/smartcard_db_fquality"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:enabled="false"
+                    android:fontFamily="Calibri"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:fontFamily="Calibri"
+                    android:gravity="right"
+                    android:text="Finger Number :"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/smartcard_db_fnumber_two"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:enabled="false"
+                    android:fontFamily="Calibri"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:fontFamily="Calibri"
+                    android:gravity="right"
+                    android:text="Finger Index :"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/smartcard_db_findex_two"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:enabled="false"
+                    android:fontFamily="Calibri"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:fontFamily="Calibri"
+                    android:gravity="right"
+                    android:text="Finger Quality :"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/smartcard_db_fquality_two"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:enabled="false"
+                    android:fontFamily="Calibri"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:fontFamily="Calibri"
+                    android:gravity="right"
+                    android:text="Security Level :"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/smartcard_db_security"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:enabled="false"
+                    android:fontFamily="Calibri"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:fontFamily="Calibri"
+                    android:gravity="right"
+                    android:text="Verification Mode :"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/smartcard_db_vmode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:enabled="false"
+                    android:fontFamily="Calibri"
+                    android:gravity="left"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/db_firstfingerhex"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/db_secondfingerhex"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray" />
+
+        </LinearLayout>
+
+        <!-- Employee Detals
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TableRow>
+                <FrameLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="@color/fade_black_gray"
+                        android:textStyle="bold"
+                        android:fontFamily="TimesNewRoman"
+                        android:enabled="false"
+                        android:text="Enrollment ID:-"/>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:textColor="@color/fade_black_gray"
+                        android:textStyle="bold"
+                        android:fontFamily="TimesNewRoman"
+                        android:enabled="false"
+                        android:id="@+id/enrlno"/>
+
+                </FrameLayout>
+            </TableRow>
+        </TableLayout> -->
+        <!--</HorizontalScrollView>-->
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scrollViewcd2"
+        style="@style/scrollbar_shape_style"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbarSize="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--<Button-->
+            <!--android:id="@+id/factorycardconvert"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="90dp"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textSize="15px"-->
+            <!--android:background="#e63900"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--android:fontFamily="Calibri"-->
+            <!--android:text="Factory Card" />-->
+
+
+            <!--<Button-->
+            <!--android:layout_width="420dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Card Read"-->
+            <!--android:layout_marginLeft="90dp"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textSize="15px"-->
+            <!--android:background="#e63900"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--android:fontFamily="Calibri"-->
+            <!--android:id="@+id/cardread" />-->
+
+            <Button
+                android:id="@+id/cardread"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/pressed_button"
+                android:drawableLeft="@drawable/cardreadm"
+                android:drawablePadding="6dp"
+                android:fontFamily="Calibri"
+                android:gravity="center|center_vertical"
+                android:padding="7dp"
+                android:text="Card Read"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/newcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/pressed_button"
+                android:drawableLeft="@drawable/cardissuem"
+                android:drawablePadding="6dp"
+                android:fontFamily="Calibri"
+                android:gravity="center|center_vertical"
+                android:padding="7dp"
+                android:text="Issue New Card"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/cardwrite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/pressed_button"
+                android:drawableLeft="@drawable/cardwrites"
+                android:drawablePadding="6dp"
+                android:fontFamily="Calibri"
+                android:gravity="center|center_vertical"
+                android:padding="7dp"
+                android:text="Card Write"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cardrefresh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/pressed_button"
+                android:drawableLeft="@drawable/cardrefreshl"
+                android:drawablePadding="6dp"
+                android:fontFamily="Calibri"
+                android:gravity="center|center_vertical"
+                android:padding="7dp"
+                android:text="Card Refresh"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cardinitialize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/pressed_button"
+                android:drawableLeft="@drawable/initialize"
+                android:drawablePadding="6dp"
+                android:fontFamily="Calibri"
+                android:gravity="center|center_vertical"
+                android:padding="7dp"
+                android:text="Card Initialize"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cardidchange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/pressed_button"
+                android:drawableLeft="@drawable/changm"
+                android:drawablePadding="6dp"
+                android:fontFamily="Calibri"
+                android:gravity="center|center_vertical"
+                android:padding="7dp"
+                android:text="Change Card Id"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+    <!--<LinearLayout--><!--android:id="@+id/linearLayoutThatDoesNotScroll"--><!--android:layout_width="fill_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="vertical">-->
+
+    <!--<TableLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content">-->
+
+    <!--<TableRow--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:background="#e63900">-->
+
+
+    <!--<ImageButton--><!--android:layout_width="wrap_content"--><!--android:layout_marginLeft="540dp"--><!--android:layout_height="wrap_content"--><!--android:textAlignment="center"--><!--android:src="@drawable/close"--><!--android:id="@+id/next1"--><!--android:onClick="minimizeKeyBoard"/>--><!-- --><!--</TableRow>-->
+
+    <!--</TableLayout>--><!--</LinearLayout>-->
+
+
+

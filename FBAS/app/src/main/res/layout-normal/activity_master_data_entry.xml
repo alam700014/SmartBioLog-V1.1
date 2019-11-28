@@ -1,0 +1,391 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/master__background"
+    android:id="@+id/master_data">
+
+    <ScrollView
+        android:id="@+id/scrollView_master_data"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Group Details"
+                    android:textAlignment="center"
+                    android:textColor="@color/glow_white"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/group_detail"
+                    android:drawablePadding="10dp"
+                    android:background="@drawable/table_row"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Group Name :"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/GroupName"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:gravity="left"
+                    android:layout_gravity="center"
+                    android:fontFamily="TimesNewRoman"
+                    android:hint="Group Name"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="23sp"
+                    android:background="@drawable/inputbox"
+                    android:textColorHint="@color/fade_black"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Group Property :"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/GroupProperty"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:fontFamily="TimesNewRoman"
+                    android:hint="Group Property"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="23sp"
+                    android:singleLine="true"
+                    android:background="@drawable/inputbox"
+                    android:textColorHint="@color/fade_black"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="12dp"/>
+
+                <Button
+                    android:id="@+id/btnSaveGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pressed_button"
+                    android:fontFamily="Calibri"
+                    android:text="Save Group"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="@color/glow_white"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:singleLine="false"
+                    android:drawableLeft="@drawable/saveico"
+                    android:drawablePadding="5dp"
+                    android:padding="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Site Details"
+                    android:textAlignment="center"
+                    android:textColor="@color/glow_white"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/site_code"
+                    android:drawablePadding="10dp"
+                    android:background="@drawable/table_row"
+                    android:paddingBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Site Code :"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/SiteCode"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:fontFamily="TimesNewRoman"
+                    android:hint="Site Code"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="23sp"
+                    android:singleLine="true"
+                    android:background="@drawable/inputbox"
+                    android:textColorHint="@color/fade_black"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="12dp"/>
+
+                <Button
+                    android:id="@+id/btnSaveSite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pressed_button"
+                    android:fontFamily="Calibri"
+                    android:text="Save Site Code"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="@color/glow_white"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/saveico"
+                    android:drawablePadding="5dp"
+                    android:padding="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Training Center"
+                    android:textAlignment="center"
+                    android:textColor="@color/glow_white"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/training_center"
+                    android:drawablePadding="10dp"
+                    android:background="@drawable/table_row"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Center Number :"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/TrainigCenterNo"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="TimesNewRoman"
+                    android:hint="Training Center Number"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="23sp"
+                    android:singleLine="true"
+                    android:background="@drawable/inputbox"
+                    android:textColorHint="@color/fade_black"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Center Name :"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/TrainingCenterName"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="TimesNewRoman"
+                    android:hint="Training Center Name"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="23sp"
+                    android:singleLine="true"
+                    android:background="@drawable/inputbox"
+                    android:textColorHint="@color/fade_black"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="12dp"/>
+
+                <Button
+                    android:id="@+id/btnSaveTraining"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pressed_button"
+                    android:fontFamily="Calibri"
+                    android:text="Save Training Center"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="@color/glow_white"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/saveico"
+                    android:drawablePadding="5dp"
+                    android:padding="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Batch Details"
+                    android:textAlignment="center"
+                    android:textColor="@color/glow_white"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/team"
+                    android:drawablePadding="10dp"
+                    android:background="@drawable/table_row"
+                    android:paddingBottom="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Batch Number :"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/BatchNumber"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="TimesNewRoman"
+                    android:hint="Batch Number"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="23sp"
+                    android:singleLine="true"
+                    android:background="@drawable/inputbox"
+                    android:textColorHint="@color/fade_black"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="TimesNewRoman"
+                    android:text="Batch Name :"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/BatchName"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="TimesNewRoman"
+                    android:hint="Batch Name"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="23sp"
+                    android:singleLine="true"
+                    android:background="@drawable/inputbox"
+                    android:textColorHint="@color/fade_black"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="12dp"/>
+
+                <Button
+                    android:id="@+id/btnSaveBatch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pressed_button"
+                    android:fontFamily="Calibri"
+                    android:text="Save Batch"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="@color/glow_white"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/saveico"
+                    android:drawablePadding="5dp"
+                    android:padding="15dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+    </ScrollView>
+
+
+    <!--<LinearLayout
+        android:id="@+id/linearLayoutThatDoesNotScroll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:background="@drawable/headerbg">
+
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:src="@drawable/close"
+                    android:id="@+id/next1"
+                    android:onClick="minimizeKeyBoard"/>
+
+
+            </TableRow>
+
+
+
+        </TableLayout>
+
+
+
+    </LinearLayout>-->
+
+
+</LinearLayout>
+

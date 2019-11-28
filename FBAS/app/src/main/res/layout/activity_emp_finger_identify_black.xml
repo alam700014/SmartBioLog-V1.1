@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--                                     Layout For Black Tab                                    -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/fade_black_gray">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fade_black_gray">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hardwareConnection"
+                layout="@layout/hardwareconnection">
+
+            </include>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fade_black_gray">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:id="@+id/view2" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <com.android.fortunaattendancesystem.extras.DigitalClock
+            android:id="@+id/digitalClock1"
+            android:layout_marginLeft="160dp"
+            android:textSize="40px"
+            android:textColor="#FFFFFF"
+            android:fontFamily="Calibri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvstate"
+            android:visibility="invisible"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="33">
+
+            <TextView
+                android:text="                                 Put Finger To Be Identified"
+                android:id="@+id/putFingerMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:textSize="17px"
+                android:textColor="#FFFFFF"
+                android:fontFamily="TimesNewRoman"
+                android:background="#e63900" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bgtoggle"
+                android:button="@null"
+                android:visibility="invisible"
+                android:textOff=""
+                android:textOn="" />
+
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_marginTop="10dp"
+                android:layout_width="140dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:background="#FFFFFF"
+                android:contentDescription="imageView1"
+                android:padding="4dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="300dp"
+        android:layout_marginLeft="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/vertical_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:max="100"
+            android:padding="10dp"
+            android:layout_gravity="center" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="300dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:text="@string/sensormessages"
+            android:layout_margin="5dp"
+            android:textSize="17px"
+            android:textColor="#FFFFFF"
+            android:fontFamily="TimesNewRoman"
+            android:background="#e63900" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/myedittext"
+            android:editable="false"
+            android:id="@+id/empId"
+            android:paddingLeft="200dp"
+            android:textSize="15px"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:fontFamily="TimesNewRoman"
+            android:hint="Employee Id"
+            android:inputType="textCapWords"
+            android:maxLength="16" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <android.inputmethodservice.KeyboardView
+            android:id="@+id/customkeyboard"
+            android:keyBackground="@drawable/samplekeybackground"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:keyPreviewOffset="5dp"
+            android:keyPreviewLayout="@layout/kbpreview"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mybutton"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:text="IN"
+            android:textSize="15px"
+            android:textColor="#FFFFFF"
+            android:fontFamily="TimesNewRoman"
+            android:id="@+id/btnIn" />
+
+        <Button
+            android:layout_width="260dp"
+            android:background="@drawable/mybutton"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:text="OUT"
+            android:textSize="15px"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:fontFamily="TimesNewRoman"
+            android:id="@+id/btnOut" />
+
+    </LinearLayout>
+
+</LinearLayout><!--                                                                                             -->

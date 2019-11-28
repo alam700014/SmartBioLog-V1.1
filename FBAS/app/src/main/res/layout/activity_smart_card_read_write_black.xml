@@ -1,0 +1,268 @@
+<!--                                      Layout For Black Tab                                  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <!-- BEGIN : Avoid the keypad deployment when the activity starts -->
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:layout_height="0px" />
+    <!-- END : Avoid the keypad deployment when the activity starts -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fade_black_gray">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hardwareConnection"
+            layout="@layout/hardwareconnection">
+
+        </include>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fade_black_gray">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:id="@+id/view2" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/empid"
+                android:hint="Enter Employee ID"
+                android:paddingLeft="150dp"
+                android:textStyle="bold"
+                android:textSize="20px"
+                android:textColor="@color/fade_black_gray"
+                android:fontFamily="TimesNewRoman"
+                android:marqueeRepeatLimit="8"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:maxLength="16" />
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="470dp"
+                android:src="@drawable/getemployee"
+                android:id="@+id/readdb" />
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <!--android:background="@drawable/scrollview_border"-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:fillViewport="true"
+        android:background="@color/fade_black_gray"
+        android:scrollbarSize="5dp"
+        style="@style/scrollbar_shape_style"
+        android:layout_weight="1"
+        android:id="@+id/scrollView">
+
+        <!--<HorizontalScrollView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="200dp">-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/message"
+            android:textStyle="bold"
+            android:textSize="20px"
+            android:textColor="#FFFFFF"
+            android:fontFamily="TimesNewRoman"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true" />
+
+        <!--</HorizontalScrollView>-->
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Card Read"
+            android:layout_marginLeft="60dp"
+            android:textAlignment="center"
+            android:textSize="15px"
+            android:background="#e63900"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:fontFamily="Calibri"
+            android:id="@+id/cardread" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Card Write"
+            android:layout_marginLeft="20dp"
+            android:textAlignment="center"
+            android:textSize="15px"
+            android:background="#e63900"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:fontFamily="Calibri"
+            android:id="@+id/cardwrite" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/cardrefresh"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:textAlignment="center"
+            android:textSize="15px"
+            android:background="#e63900"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:fontFamily="Calibri"
+            android:text="Card Refresh" />
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textAlignment="center"
+            android:textSize="15px"
+            android:background="#e63900"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:fontFamily="Calibri"
+            android:text="Card Initialize"
+            android:id="@+id/cardinitialize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp">
+
+        <!--<Button-->
+        <!--android:id="@+id/factorycardconvert"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="90dp"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textSize="15px"-->
+        <!--android:background="#e63900"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:fontFamily="Calibri"-->
+        <!--android:text="Factory Card" />-->
+
+
+        <Button
+            android:id="@+id/cardidchange"
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:textAlignment="center"
+            android:textSize="15px"
+            android:background="#e63900"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:fontFamily="Calibri"
+            android:text="Change Card Id" />
+
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/linearLayoutThatDoesNotScroll"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TableLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TableRow-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="#e63900">-->
+
+
+    <!--<ImageButton-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_marginLeft="540dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textAlignment="center"-->
+    <!--android:src="@drawable/close"-->
+    <!--android:id="@+id/next1"-->
+    <!--android:onClick="minimizeKeyBoard"/>-->
+    <!-- -->
+    <!--</TableRow>-->
+
+    <!--</TableLayout>-->
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>
+
+    <!--                                                                                            -->

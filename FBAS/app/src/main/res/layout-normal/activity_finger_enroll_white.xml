@@ -1,0 +1,1164 @@
+<!--                                 Layout For White Tab(3G7+)                                          -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/master__background"
+    android:orientation="vertical">
+
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fade_black_gray">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp" />
+
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <include
+            android:id="@+id/hardwareConnection"
+            layout="@layout/hardwareconnection"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"></include>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/radioCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RadioButton
+                    android:id="@+id/radioEmpId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/pressed_button_curveless"
+                    android:button="@color/transparent"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:onClick="onSearchClicked"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Employee Id"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioCardId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/pressed_button_curveless"
+                    android:button="@color/transparent"
+                    android:gravity="center"
+                    android:onClick="onSearchClicked"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Card Id"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/radioEmpName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/pressed_button_curveless"
+                    android:button="@color/transparent"
+                    android:gravity="center"
+                    android:onClick="onSearchClicked"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Employee Name"
+                    android:textColor="@color/fade_black_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp">
+
+            <SearchView
+                android:id="@+id/searchViewEmpId"
+                style="@style/SearchTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputbox_edge"
+                android:imeOptions="actionDone">
+
+            </SearchView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        style="@style/scrollbar_shape_style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbarSize="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_border"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:text="Search Employee Using Below Options For Finger Enrollment:"
+                    android:textSize="15px"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="Calibri" />
+
+
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp">
+
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/light_gray_2"
+                    android:dividerHeight="2dp"
+                    android:fontFamily="TimesNewRoman"
+                    android:textColor="@color/dark_black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <!--<ListView-->
+                <!--android:id="@+id/listViewEmpId"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="left"-->
+                <!--android:textSize="15px"-->
+                <!--android:textColor="@color/fade_black_gray"-->
+                <!--android:textStyle="bold"-->
+                <!--android:fontFamily="TimesNewRoman"></ListView>-->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tblEmpDetails"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/grey_200"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/table_row"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/savedStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="TimesNewRoman"
+                        android:padding="5dp"
+                        android:text="Employee Details"
+                        android:textAlignment="center"
+                        android:textColor="@color/glow_white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/U_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tvEmpId"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="right"
+                        android:text="Employee ID:"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/EmployeeID"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:enabled="false"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="right"
+                        android:text="Card ID:"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/CardID"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:enabled="false"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="right"
+                        android:text="Name:"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:enabled="false"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="right"
+                        android:text="Number Of Fingers:"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/NoOfFingers"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:enabled="false"
+                        android:fontFamily="TimesNewRoman"
+                        android:paddingLeft="10dp"
+                        android:text="NA"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="right"
+                        android:text="First Finger Index:"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/FirstFingerIndex"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:enabled="false"
+                        android:fontFamily="TimesNewRoman"
+                        android:paddingLeft="10dp"
+                        android:text="NA"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="right"
+                        android:text="Second Finger Index:"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/SecondFingerIndex"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:enabled="false"
+                        android:fontFamily="TimesNewRoman"
+                        android:paddingLeft="10dp"
+                        android:text="NA"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="right"
+                        android:text="Security Level:"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/SecurityLevel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:enabled="false"
+                        android:fontFamily="TimesNewRoman"
+                        android:paddingLeft="10dp"
+                        android:text="NA"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="right"
+                        android:text="Verfication Mode:"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/VerificationMode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:enabled="false"
+                        android:fontFamily="TimesNewRoman"
+                        android:paddingLeft="10dp"
+                        android:text="NA"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/tblEmpFingerUpdationDetails"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="10sp"
+                android:background="@color/grey_200"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginRight="2dp"
+                    android:background="@drawable/table_row">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="TimesNewRoman"
+                        android:padding="5dp"
+                        android:text="Finger Updation Details"
+                        android:textAlignment="center"
+                        android:textColor="@color/glow_white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/updateTemplate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:drawableLeft="@drawable/pressed_button"
+                        android:enabled="false"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="right"
+                        android:onClick="onUpdateTemplateClicked"
+                        android:text="Update Template"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/fingerIndex"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="left"
+                        android:prompt="@string/fingerIndex"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/savepkindatabase"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:checked="true"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="right"
+                        android:onClick="onSavePKInDatabaseClicked"
+                        android:saveEnabled="true"
+                        android:text="Save PK In Database"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="right"
+                        android:text="First Finger Index:"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <Spinner
+                        android:id="@+id/newFirstFingerIndex"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="left"
+                        android:prompt="@string/exportimage"
+                        android:scrollbarSize="30dp"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="right"
+                        android:text="Second Finger Index:"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/newSecondFingerIndex"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="left"
+                        android:prompt="@string/exportimage"
+                        android:scrollbarSize="30dp"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tblEmpFingerDetails"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/grey_200"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:background="@drawable/table_row"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="TimesNewRoman"
+                        android:padding="5dp"
+                        android:text="Finger Enrollment Details"
+                        android:textAlignment="center"
+                        android:textColor="@color/glow_white"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="right"
+                        android:text="Number Of Fingers:"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <RadioGroup
+                        android:id="@+id/fingernumber"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:enabled="false"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/onefingerEnroll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:fontFamily="TimesNewRoman"
+                            android:onClick="onNumberFingerClicked"
+                            android:text="One"
+                            android:textColor="@color/fade_black_gray"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:id="@+id/twofingerEnroll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:fontFamily="TimesNewRoman"
+                            android:onClick="onNumberFingerClicked"
+                            android:text="Two"
+                            android:textColor="@color/fade_black_gray"
+                            android:textSize="15sp" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="right"
+                        android:text="First Finger Index:"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <Spinner
+                        android:id="@+id/exportfinger1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:enabled="false"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="left"
+                        android:prompt="@string/exportimage"
+                        android:scrollbarSize="20dp"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="right"
+                        android:text="Second Finger Index:"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/exportfinger2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:enabled="false"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="left"
+                        android:prompt="@string/exportimage"
+                        android:scrollbarSize="30dp"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="right"
+                        android:text="Security Level:"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/securitylevel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:enabled="false"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="left"
+                        android:prompt="@string/exportimage"
+                        android:scrollbarSize="30dp"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="right"
+                        android:text="Verification Mode"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/VarificationMode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:enabled="false"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="left"
+                        android:prompt="@string/exportimage"
+                        android:scrollbarSize="30dp"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="right"
+                        android:text="Pin:"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/Pin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".50"
+                        android:enabled="false"
+                        android:fontFamily="TimesNewRoman"
+                        android:gravity="left"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:textColor="@color/fade_black_gray"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--<LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/tblButtons">
+
+
+                <Button
+                    android:id="@+id/btn_enroll"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="onStartStop"
+                    android:text="Enroll Finger"
+                    android:textSize="15sp"
+                    android:background="@drawable/pressed_button"
+                    android:textStyle="bold"
+                    android:textColor="#474747"
+                    android:fontFamily="Calibri" />
+
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:enabled="false"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:onClick="saveFingerData"
+                    android:text="Save Finger Data"
+                    android:textSize="15sp"
+                    android:background="@drawable/pressed_button"
+                    android:textStyle="bold"
+                    android:textColor="#474747"
+                    android:fontFamily="Calibri" />
+
+                <Button
+                    android:id="@+id/btn_empDetails"
+                    android:enabled="false"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:onClick="empFullDetails"
+                    android:text="Employee Details"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/pressed_button"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#474747"
+                    android:fontFamily="Calibri" />
+
+
+                <Button
+                    android:visibility="invisible"
+                    android:id="@+id/btn_Reset"
+                    android:enabled="false"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:onClick="Reset"
+                    android:text="Reset"
+                    android:textSize="15sp"
+                    android:background="@drawable/pressed_button"
+                    android:textStyle="bold"
+                    android:textColor="#474747"
+                    android:fontFamily="Calibri" />
+
+                <Button
+                    android:id="@+id/btn_rebootsoft"
+                    android:enabled="false"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:onClick="onRebootSoft"
+                    android:text="Reboot Software"
+                    android:textSize="15sp"
+                    android:background="@drawable/pressed_button"
+                    android:textStyle="bold"
+                    android:textColor="@color/glow_white"
+                    android:fontFamily="Calibri" />
+
+
+                <Button
+                    android:id="@+id/btn_closeandquit"
+                    android:enabled="false"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:onClick="onCloseAndQuit"
+                    android:text="Close Com And Quit"
+                    android:textSize="15sp"
+                    android:background="@drawable/pressed_button"
+                    android:textStyle="bold"
+                    android:textColor="@color/glow_white"
+                    android:fontFamily="Calibri" />
+
+            </LinearLayout>-->
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/tblButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:background="@color/transparent"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp">
+
+
+        <Button
+            android:id="@+id/btn_enroll"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/pressed_button"
+            android:fontFamily="TimesNewRoman"
+            android:onClick="onStartStop"
+            android:text="Enroll Finger"
+            android:textColor="#474747"
+            android:textSize="13sp"
+            android:textStyle="bold" /> <!--colors defines at runtime-->
+
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/pressed_button"
+            android:enabled="false"
+            android:fontFamily="TimesNewRoman"
+            android:onClick="saveFingerData"
+            android:text="Save Finger Data"
+            android:textColor="#474747"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_empDetails"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/pressed_button"
+            android:enabled="false"
+            android:fontFamily="TimesNewRoman"
+            android:onClick="empFullDetails"
+            android:text="Employee Details"
+            android:textColor="#474747"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btn_Reset"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/pressed_button"
+            android:enabled="false"
+            android:fontFamily="TimesNewRoman"
+            android:onClick="Reset"
+            android:text="Reset"
+            android:textColor="#474747"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_rebootsoft"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/pressed_button"
+            android:enabled="false"
+            android:fontFamily="TimesNewRoman"
+            android:onClick="onRebootSoft"
+            android:text="Reboot Software"
+            android:textColor="@color/glow_white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btn_closeandquit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/pressed_button"
+            android:enabled="false"
+            android:fontFamily="TimesNewRoman"
+            android:onClick="onCloseAndQuit"
+            android:text="Close Com And Quit"
+            android:textColor="@color/glow_white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="#e63900">-->
+
+
+    <!--<ImageButton-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="540dp"-->
+    <!--android:textAlignment="center"-->
+    <!--android:src="@drawable/close"-->
+    <!--android:id="@+id/next1"-->
+    <!--android:onClick="minimizeKeyBoard" />-->
+
+    <!--</LinearLayout>-->
+
+</LinearLayout>
+
+

@@ -1,0 +1,30 @@
+<resources>
+
+    <string name="FBAS_OK">No error</string>
+    <string name="DUPLICATE_EMP_ID">Employee Id already exists</string>
+    <string name="INVALID_EMP_ID_LEN">Employee Id should not be greater than 16 characters</string>
+    <string name="COMPULSARY_EMP_ID">Employee Id is compulsary</string>
+    <string name="DUPLICATE_CARD_ID">Card Id already exists</string>
+    <string name="CARD_ID_HOTLIST">Card Id is hotlisted</string>
+    <string name="NON_NUMERIC_CARD_ID">Card Id should be numeric</string>
+    <string name="INVALID_CARD_ID_LEN">Card Id should not be greater than 8 characters</string>
+    <string name="COMPULSARY_CARD_ID">Card Id is compulsory</string>
+    <string name="INVALID_EMP_NAME_LEN">Employee Name should not be greater than 16 characters</string>
+    <string name="EMP_NAME_NUMERIC">Employee Name should be alphabetic</string>
+    <string name="COMPULSARY_EMP_NAME">Employee Name is compulsary</string>
+    <string name="INVALID_AADHAAR_ID">Aadhaar Id is invalid</string>
+    <string name="NON_NUMERIC_AADHAAR_ID">Aadhaar Id should be numeric</string>
+    <string name="INVALID_AADHAAR_ID_LEN">Aadhaar Id should not be of 12 digits</string>
+    <string name="INVALID_BLOOD_GROUP">Invalid blood group</string>
+    <string name="NON_NUMERIC_MOBILE_NO">Mobile number should be numeric</string>
+    <string name="INVALID_MOBILE_NO_LEN">Mobile No should be of 10 digits</string>
+    <string name="INVALID_EMAIL_ID">Invalid Email id</string>
+    <string name="INVALID_VALID_UPTO_DATE">Invalid valid upto date</string>
+    <string name="INVALID_DATE_OF_BIRTH">Invalid date of birth</string>
+    <string name="NON_NUMERIC_PIN_NUMBER">Pin Number should be numeric</string>
+    <string name="INVALID_PIN_NO_LEN">Pin number should not be of 4 digits</string>
+    <string name="UNKNOWN_ERROR">Unknown error</string>
+
+
+
+</resources>
